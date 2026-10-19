@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales website to device resolution.-->
+        <link rel="stylesheet" href="CSS/pokemon.css"> <!--Imports CSS Style sheet-->
+        <title>Pokemon TCG</title> <!--Decides what the tab text says-->
+    </head>
+
+    <body>
+        <header>
+            <br>
+            <h1><a href="index.html">Table Flip TCG</a></h1> <!--Links back to home page from the header-->
+            <div class="dropdowns">
+                <div class="carddropdown">
+                    <button class="tcgbutton">Cards</button>
+                        <div class="carddropcont">
+                            <a href="cardproducts.html">All TCGs</a>
+                            <a href="pokemon.html">Pokemon</a>
+                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
+                            <a href="mtg.html">Magic: The Gathering</a>
+                            <a href="lorcana.html">Lorcana</a>
+                        </div>
+                </div>
+                <div class="accdropdown">
+                    <button class="accbutton">Accessories</button>
+                        <div class="accdropcont">
+                            <a href="accessories.html">All accessories</a>
+                            <a href="playmats.html">Playmats</a>
+                            <a href="sleeves.html">Sleeves</a>
+                            <a href="deckbox.html">Deck Boxes</a>
+                            <a href="dice.html">Dice, Counters, and Coins</a>
+                            <a href="binders.html">Binders</a>
+                        </div>
+                </div>
+                <div class="helpdropdown">
+                    <button class="helpbutton">Help</button>
+                        <div class="helpdropcont">
+                            <a href="help.html">Help & FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="about.html">About Us</a>
+                        </div>
+                </div>
+            </div>
+            <div id="main">
+            <button class="cartbarbutton" onclick="openNav()">Cart</button>
+            <div class="cartcount" id="cartCount">0</div>
+            <div id="cartbar" class="sidebar">
+                <a href="javascript:void(0)" class="closecart" onclick="closeNav()">&times;</a>
+                <aside== class="cartdisplay">
+                    <h2>Your Cart</h2>
+                    <div class="cartitems">
+                    </div>
+                    <div class="carttotal">
+                        <p><strong>Total: £<span id="total">0.00</span></strong></p>
+                    </div>
+                </aside>
+            </div>
+            </header>
+            <main class="container">
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="productlist">
+                <div class="productdisplay" data-id="68" data-name="" data-price="49.99">
+                    <img src="Images/vx9tb.png" alt="">
+                    <h3></h3>
+                    <p class="price">£49.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+                <div class="productdisplay" data-id="69" data-name="" data-price="49.99">
+                    <img src="Images/vx4rb.webp" alt="">
+                    <h3></h3>
+                    <p class="price">£49.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="70" data-name="" data-price="49.99">
+                    <img src="Images/vx9yb.png" alt="">   
+                    <h3></h3>
+                    <p class="price">£49.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="71" data-name="" data-price="49.99">
+                    <img src="Images/vxrrb.png" alt="">
+                    <h3></h3>
+                    <p class="price">£49.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="72" data-name="" data-price="49.99">
+                    <img src="Images/vxrbb.png" alt="">
+                    <h3></h3>
+                    <p class="price">£49.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="73" data-name="" data-price="49.99">
+                    <img src="Images/vxryb.png" alt="">
+                    <h3></h3>
+                    <p class="price">£49.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="74" data-name="" data-price="49.99">
+                    <img src="Images/poetb.png" alt="">
+                    <h3></h3>
+                    <p class="price">£49.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="75" data-name="" data-price="49.99">
+                    <img src="Images/cretb.png" alt="">
+                    <h3></h3>
+                    <p class="price">£49.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="76" data-name="" data-price="49.99">
+                    <img src="Images/pbetb.png" alt="">
+                    <h3></h3>
+                    <p class="price">£49.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        </main>
+        <script src="Scripts/cart.js"></script>
+                    <footer>
+                        <br>
+                        <p>Table Flip TCG</p>
+                        <br>
+                        <nav class="bottombar">
+                        <a href="about.html">About us</a>
+                        <a href="contact.html">Contact us</a>
+                        </nav class="bottombar">
+                    </footer>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales website to device resolution.-->
+        <link rel="stylesheet" href="CSS/deckbox.css"> <!--Imports CSS Style sheet-->
+        <title>Deckboxes</title> <!--Decides what the tab text says-->
+    </head>
+
+    <body>
+        <header>
+            <br>
+            <h1><a href="index.html">Table Flip TCG</a></h1> <!--Links back to home page from the header-->
+            <div class="dropdowns">
+                <div class="carddropdown">
+                    <button class="tcgbutton">Cards</button>
+                        <div class="carddropcont">
+                            <a href="cardproducts.html">All TCGs</a>
+                            <a href="pokemon.html">Pokemon</a>
+                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
+                            <a href="mtg.html">Magic: The Gathering</a>
+                            <a href="lorcana.html">Lorcana</a>
+                        </div>
+                </div>
+                <div class="accdropdown">
+                    <button class="accbutton">Accessories</button>
+                        <div class="accdropcont">
+                            <a href="accessories.html">All accessories</a>
+                            <a href="playmats.html">Playmats</a>
+                            <a href="sleeves.html">Sleeves</a>
+                            <a href="deckbox.html">Deck Boxes</a>
+                            <a href="dice.html">Dice, Counters, and Coins</a>
+                            <a href="binders.html">Binders</a>
+                        </div>
+                </div>
+                <div class="helpdropdown">
+                    <button class="helpbutton">Help</button>
+                        <div class="helpdropcont">
+                            <a href="help.html">Help & FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="about.html">About Us</a>
+                        </div>
+                </div>
+            </div>
+            <div id="main">
+            <button class="cartbarbutton" onclick="openNav()">Cart</button>
+            <div class="cartcount" id="cartCount">0</div>
+            <div id="cartbar" class="sidebar">
+                <a href="javascript:void(0)" class="closecart" onclick="closeNav()">&times;</a>
+                <aside== class="cartdisplay">
+                    <h2>Your Cart</h2>
+                    <div class="cartitems">
+                    </div>
+                    <div class="carttotal">
+                        <p><strong>Total: £<span id="total">0.00</span></strong></p>
+                    </div>
+                </aside>
+            </div>
+            </header>
+            <main class="container">
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="productlist">
+                <div class="productdisplay" data-id="50" data-name="Vault X Deck Box  100+ - Just Pink" data-price="13.99">
+                    <img src="Images/vxpdb.png" alt="Vault X Deck Box  100+ - Just Pink">
+                    <h3>Vault X Deck Box  100+ <br>
+                        Just Pink</h3>
+                    <p class="price">£13.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+                <div class="productdisplay" data-id="51" data-name="Vault X Deck Box  100+ - Pastel Yellow" data-price="13.99">
+                    <img src="Images/vxydb.png" alt="Vault X Deck Box  100+ - Pastel Yellow">
+                    <h3>Vault X Deck Box  100+ <br>
+                    Pastel Yellow</h3>
+                    <p class="price">£13.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="52" data-name="Ultimate Guard Boulder 100+ Clear - Ruby" data-price="5.99">
+                    <img src="Images/ugbr.png" alt="Ultimate Guard Boulder 100+ Clear - Ruby">   
+                    <h3>Ultimate Guard Boulder 100+ <br>
+                        Clear - Ruby</h3>
+                    <p class="price">£5.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="53" data-name="Ultimate Guard Boulder 100+ Clear - Onyx" data-price="5.99">
+                    <img src="Images/ugbo.png" alt="Ultimate Guard Boulder 100+ Clear - Onyx">   
+                    <h3>Ultimate Guard Boulder 100+ <br>
+                        Clear - Onyx</h3>
+                    <p class="price">£5.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="54" data-name="Vault X Sideloading Deck Box 100+ - Blue" data-price="15.99">
+                    <img src="Images/vxbdb.png" alt="Vault X Sideloading Deck Box 100+ - Blue">
+                    <h3>Vault X Sideloading Deck Box 100+ <br>
+                        Blue</h3>
+                    <p class="price">£15.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="55" data-name="Vault X Sideloading Game Box 100+ - Green" data-price="19.99">
+                    <img src="Images/vxgdb.png" alt="Vault X Sideloading Game Box 100+ - Green">
+                    <h3>Vault X Sideloading Game Box 100+ <br>
+                        Green</h3>
+                    <p class="price">£19.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="56" data-name="Gamegenic Game Castle - Pink/White/Teal" data-price="39.99">
+                    <img src="Images/Ggcpwt.png" alt="Gamegenic Game Castle - Pink/White/Teal">
+                    <h3>Gamegenic Game Castle <br>
+                        Pink/White/Teal</h3>
+                    <p class="price">£39.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="57" data-name="Ultra Pro Alcove Click Deck Box - Pokemon Unova" data-price="29.99">
+                    <img src="Images/upacudb.png" alt="Ultra Pro Alcove Click Deck Box - Pokemon Unova">
+                    <h3>Ultra Pro Alcove Click Deck Box <br>
+                        Pokemon Unova</h3>
+                    <p class="price">£29.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="58" data-name="Ultra Pro Alcove Click Deck Box - Pokemon Sinnoh" data-price="29.99">
+                    <img src="Images/upacsdb.png" alt="Ultra Pro Alcove Click Deck Box - Pokemon Sinnoh">
+                    <h3>Ultra Pro Alcove Click Deck Box <br>
+                        Pokemon Sinnoh</h3>
+                    <p class="price">£29.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        </main>
+        <script src="Scripts/cart.js"></script>
+                    <footer>
+                        <br>
+                        <p>Table Flip TCG</p>
+                        <br>
+                        <nav class="bottombar">
+                        <a href="about.html">About us</a>
+                        <a href="contact.html">Contact us</a>
+                        </nav class="bottombar">
+                    </footer>
+    </body>
+</html>

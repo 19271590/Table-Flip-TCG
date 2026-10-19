@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales website to device resolution.-->
+        <link rel="stylesheet" href="CSS/lorcana.css"> <!--Imports CSS Style sheet-->
+        <title>Disney Lorcana</title> <!--Decides what the tab text says-->
+    </head>
+
+    <body>
+        <header>
+            <br>
+            <h1><a href="index.html">Table Flip TCG</a></h1> <!--Links back to home page from the header-->
+            <div class="dropdowns">
+                <div class="carddropdown">
+                    <button class="tcgbutton">Cards</button>
+                        <div class="carddropcont">
+                            <a href="cardproducts.html">All TCGs</a>
+                            <a href="pokemon.html">Pokemon</a>
+                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
+                            <a href="mtg.html">Magic: The Gathering</a>
+                            <a href="lorcana.html">Lorcana</a>
+                        </div>
+                </div>
+                <div class="accdropdown">
+                    <button class="accbutton">Accessories</button>
+                        <div class="accdropcont">
+                            <a href="accessories.html">All accessories</a>
+                            <a href="playmats.html">Playmats</a>
+                            <a href="sleeves.html">Sleeves</a>
+                            <a href="deckbox.html">Deck Boxes</a>
+                            <a href="dice.html">Dice, Counters, and Coins</a>
+                            <a href="binders.html">Binders</a>
+                        </div>
+                </div>
+                <div class="helpdropdown">
+                    <button class="helpbutton">Help</button>
+                        <div class="helpdropcont">
+                            <a href="help.html">Help & FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="about.html">About Us</a>
+                        </div>
+                </div>
+            </div>
+            <div id="main">
+            <button class="cartbarbutton" onclick="openNav()">Cart</button>
+            <div class="cartcount" id="cartCount">0</div>
+            <div id="cartbar" class="sidebar">
+                <a href="javascript:void(0)" class="closecart" onclick="closeNav()">&times;</a>
+                <aside== class="cartdisplay">
+                    <h2>Your Cart</h2>
+                    <div class="cartitems">
+                    </div>
+                    <div class="carttotal">
+                        <p><strong>Total: £<span id="total">0.00</span></strong></p>
+                    </div>
+                </aside>
+            </div>
+            </header>
+            <main class="container">
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="productlist">
+                <div class="productdisplay" data-id="23" data-name="Disney Lorcana: Rise of the Floodborn Booster Box" data-price="119.99">
+                    <img src="Images/rofbb.png" alt="Disney Lorcana: Rise of the Floodborn Booster Box">
+                    <h3>Disney Lorcana: Rise of the Floodborn <br>
+                        Booster Box</h3>
+                    <p class="price">£119.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+                <div class="productdisplay" data-id="24" data-name="Disney Lorcana: Attack of the Vine! Booster Box" data-price="119.99">
+                    <img src="Images/avbb.png" alt="Disney Lorcana: Attack of the Vine! Booster Box">
+                    <h3>Disney Lorcana: Attack of the Vine! <br>
+                        Booster Box</h3>
+                    <p class="price">£119.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="25" data-name="Disney Lorcana: Wilds Unknown Booster Box" data-price="119.99">
+                    <img src="Images/wubb.png" alt="Disney Lorcana: Wilds Unknown Booster Box">   
+                    <h3>Disney Lorcana: Wilds Unknown <br>
+                        Booster Box</h3>
+                    <p class="price">£119.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="26" data-name="Disney Lorcana: Winterspell Booster Box" data-price="119.99">
+                    <img src="Images/wsbb.png" alt="Disney Lorcana: Winterspell Booster Box">
+                    <h3>Disney Lorcana: Winterspell <br>
+                        Booster Box</h3>
+                    <p class="price">£119.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="27" data-name="Disney Lorcana: Whispers in the Well Booster Box" data-price="119.99">
+                    <img src="Images/wwbb.png" alt="Disney Lorcana: Whispers in the Well Booster Box">
+                    <h3>Disney Lorcana: Whispers in the Well <br>
+                        Booster Box</h3>
+                    <p class="price">£119.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="28" data-name="Disney Lorcana: Fabled Booster Box" data-price="119.99">
+                    <img src="Images/fbb.png" alt="Disney Lorcana: Fabled Booster Box">
+                    <h3>Disney Lorcana: Fabled <br>
+                        Booster Box</h3>
+                    <p class="price">£119.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="29" data-name="Disney Lorcana: Reign of Jafar Booster Box" data-price="119.99">
+                    <img src="Images/rjbb.png" alt="Disney Lorcana: Reign of Jafar Booster Box">
+                    <h3>Disney Lorcana: Reign of Jafar <br>
+                        Booster Box</h3>
+                    <p class="price">£119.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="30" data-name="Disney Lorcana: Archazia's Island Booster Box" data-price="119.99">
+                    <img src="Images/aibb.png" alt="Disney Lorcana: Archazia's Island Booster Box">
+                    <h3>Disney Lorcana: Archazia's Island <br>
+                        Booster Box</h3>
+                    <p class="price">£119.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            <div class="productdisplay" data-id="31" data-name="Disney Lorcana: Azurite Sea Booster Box" data-price="119.99">
+                    <img src="Images/asbb.png" alt="Disney Lorcana: Azurite Sea Booster Box">
+                    <h3>Disney Lorcana: Azurite Sea Booster Box</h3>
+                    <p class="price">£119.99</p>
+                    <button class="addbutton">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        </main>
+        <script src="Scripts/cart.js"></script>
+                    <footer>
+                        <br>
+                        <p>Table Flip TCG</p>
+                        <br>
+                        <nav class="bottombar">
+                        <a href="about.html">About us</a>
+                        <a href="contact.html">Contact us</a>
+                        </nav class="bottombar">
+                    </footer>
+    </body>
+</html>
