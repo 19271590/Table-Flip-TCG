@@ -6,7 +6,7 @@ html {
     max-height: min-content;
 }
 body {
-    background-color: #a8b8d0;
+    background-color:#a8b8d0;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -14,12 +14,36 @@ body {
     margin: 0;
     padding: 0;
 }
+.bottombar a {
+    float: center;
+}
+.bottombar {
+    float: center;
+    float: bottom;
+}
+main a {
+    text-align: center;
+    color: black
+}
+main {
+    height: 500px;
+    width: 100%;
+}
+.dropdowns {
+  text-align: right;
+  margin: 50px;
+  position: fixed;
+  bottom: 85%;
+  left: 20%;
+}
 .tcgbutton {
-  background-color: #434343;
+  background-color: rgb(134, 92, 155);
   color: white;
   padding: 5px;
+  margin: 20px;
   font-size: 16px;
   border: none;
+  border-radius: 5px;
 }
 
 .carddropdown {
@@ -47,14 +71,16 @@ body {
 
 .carddropdown:hover .carddropcont {display: block;}
 
-.carddropdown:hover .tcgbutton {background-color: black;}
+.carddropdown:hover .tcgbutton {background-color: rgb(114, 72, 135);}
 
 .accbutton {
-  background-color: #434343;
+  background-color: rgb(134, 92, 155);
   color: white;
   padding: 5px;
+  margin: 20px;
   font-size: 16px;
   border: none;
+  border-radius: 5px;
 }
 
 .accdropdown {
@@ -82,14 +108,16 @@ body {
 
 .accdropdown:hover .accdropcont {display: block;}
 
-.accdropdown:hover .accbutton {background-color: black;}
+.accdropdown:hover .accbutton {background-color: rgb(114, 72, 135);}
 
 .helpbutton {
-  background-color: #434343;
+  background-color: rgb(134, 92, 155);
   color: white;
   padding: 5px;
+  margin: 20px;
   font-size: 16px;
   border: none;
+  border-radius: 5px;
 }
 
 .helpdropdown {
@@ -117,7 +145,7 @@ body {
 
 .helpdropdown:hover .helpdropcont {display: block;}
 
-.helpdropdown:hover .helpbutton {background-color: black;}
+.helpdropdown:hover .helpbutton {background-color: rgb(114, 72, 135);}
 
 .bottombar a {
     float: center;
@@ -126,15 +154,40 @@ body {
     float: center;
     float: bottom;
 }
-main a {
-    text-align: center;
-    color: black;
-    font-size: 20px;
+.products a {
+    position:relative;
+    top: 1000px;
 }
-main {
-    height: 50%;
-    width: 100%;
-    font-size: 20px;
+.products {
+    position:relative;
+    bottom: 600px;
+    margin: 0;
+}
+.producttext {
+    position: relative;
+    bottom: 450px;
+}
+.productmiddle img{
+    position: relative;
+    bottom: 100px;
+}
+.productnavtop a {
+    margin: 150px;
+}
+.productnavtop img {
+    position: relative;
+    bottom: 400px;
+}
+.productnavbottom a {
+    margin: 250px;
+}
+.productnavbottom img {
+    position: relative;
+    bottom: 230px;
+}
+.productmiddle a {
+    position: absolute;
+    right: 600px;
 }
 .header {
     max-width: 100%;
@@ -146,17 +199,19 @@ main {
 }
 header {
     background-color: #9a70af;
-    height: 100%;
+    height: 10%;
     width: 100%;
-    position: relative;
-    bottom: 10px;
+    text-align: left;
+    position: fixed;
+    top: 0px;
     border-style: none none solid none;
     border-color: black;
+    z-index: 100;
 }
+
 
 header a {
     color: rgb(255, 255, 255);
-    text-align: center;
     position: relative;
     top: 5%;
 }
@@ -168,7 +223,7 @@ footer {
     color: rgb(255, 255, 255);
     text-align: center;
     position:relative;
-    top: 472px;
+    top: 134px;
     border-style: solid none none none;
     border-color: black;
 }

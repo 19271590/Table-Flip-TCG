@@ -217,8 +217,9 @@ main {
   padding: 20px;
 }
 .productdisplay img{
-  height: 200px;
-  width: 50%;
+  max-height: 200px;
+  height: 100%;
+  width: auto;
   object-fit: cover;
 }
 .productdisplay:hover {

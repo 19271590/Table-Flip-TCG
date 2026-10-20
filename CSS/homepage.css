@@ -66,17 +66,18 @@ header {
     z-index: 100;
 }
 
+
+header a {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 5%;
+}
 .dropdowns {
   text-align: right;
   margin: 50px;
   position: fixed;
   bottom: 85%;
   left: 20%;
-}
-header a {
-    color: rgb(255, 255, 255);
-    position: relative;
-    top: 5%;
 }
 .tcgbutton {
   background-color: rgb(134, 92, 155);

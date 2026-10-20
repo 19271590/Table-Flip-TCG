@@ -12,6 +12,18 @@ function closeNav() {
 // 1. The State
 let cart = [];
 let cartCount = 0;
+if (localStorage.getItem("count")) {
+    count = parseInt(localStorage.getItem("count"));
+}
+
+if (localStorage.getItem("sum")) {
+    sum = parseInt(localStorage.getItem("sum"));
+}
+
+if (localStorage.getItem("cart")) {
+    cart = JSON.parse(localStorage.getItem("cart"));
+}
+
 
 // 2. DOM Elements
 const cartItemsContainer = document.querySelector('.cartitems');
@@ -35,11 +47,14 @@ function addToCart(productId, productName, productPrice) {
             quantity: 1
         });
     }
+    
+    localStorage.setItem("cart", JSON.stringify(cart));
 
     // Update the UI to reflect the new state
     renderCart();
     showFeedback(`${productName} added to cart!`);
-}
+        
+    }
 
 // 4. Core Function: Remove from Cart
 function removeFromCart(productId) {
