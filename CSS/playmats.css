@@ -1,0 +1,381 @@
+html {
+    overflow-x: hidden;
+}
+.body {
+    max-width: min-content;
+    max-height: min-content;
+}
+body {
+    background-color:#a8b8d0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.bottombar a {
+    float: center;
+}
+.bottombar {
+    float: center;
+    float: bottom;
+}
+main a {
+    text-align: center;
+    color: black
+}
+main {
+    width: 100%;
+    flex: 1;
+}
+* {box-sizing:border-box}
+
+.products {
+  position: relative;
+  top: 25%;
+}
+.productlist {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    minmax(min(100%, 18rem), 3fr)
+  );
+}
+.productdisplay {
+  background-color: #798fae;
+  border-radius: 12px;
+  margin: 50px;
+  padding: 20px;
+}
+.productdisplay img{
+  max-height: 200px;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+.productdisplay:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: rgb(101, 123, 154);
+}
+
+.header {
+    max-width: 100%;
+    max-height: 25%;
+}
+
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: rgb(134, 92, 155); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  z-index: 102;
+  color: white;
+  border-style: none none none solid;
+  border-color: black;
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidebar .closecart {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+/* The button used to open the sidebar */
+.cartbarbutton {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+}
+button.cartbarbutton {
+  position: fixed;
+  top: 2%;
+  right: 3%;
+  z-index: 101;
+}
+.cartbarbutton img{
+  width: 50px;
+  height: auto;
+}
+
+.cartbarbutton:hover {
+  filter: brightness(80%);
+}
+.cartcount {
+  position: fixed;
+  top: 2%;
+  right: 3%;
+  z-index: 102;
+  color: white;
+}
+.cartimage{
+  width: 100px;
+  height: auto;
+}
+.cartitems{
+  font-size: 12px;
+}
+
+header {
+    background-image:url("../Images/headerbackground.png");
+    height: 12%;
+    width: 100%;
+    text-align: left;
+    position: fixed;
+    top: 0px;
+    border-style: none none solid none;
+    border-color: black;
+    z-index: 100;
+}
+
+.dropdowns {
+  text-align: right;
+  margin: 50px;
+  position: fixed;
+  bottom: 85%;
+  left: 20%;
+}
+header a {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 5%;
+    font-size: 25px;
+}
+header img {
+    width: 175px;
+    height: auto;
+    position: relative;
+    left: 3%;
+    bottom: 18px;
+    object-fit:cover; 
+    z-index: 99;
+  }
+.tcgbutton {
+  background-color: rgb(134, 92, 155);
+  color: white;
+  padding: 5px;
+  margin: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+.carddropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.carddropcont {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.carddropcont a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.carddropcont a:hover {background-color: #ddd;}
+
+.carddropdown:hover .carddropcont {display: block;}
+
+.carddropdown:hover .tcgbutton {background-color: rgb(114, 72, 135);}
+
+.accbutton {
+  background-color: rgb(134, 92, 155);
+  color: white;
+  padding: 5px;
+  margin: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.accdropcont {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.accdropcont a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.accdropcont a:hover {background-color: #ddd;}
+
+.accdropdown:hover .accdropcont {display: block;}
+
+.accdropdown:hover .accbutton {background-color: rgb(114, 72, 135);}
+
+.helpbutton {
+  background-color: rgb(134, 92, 155);
+  color: white;
+  padding: 5px;
+  margin: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.helpdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.helpdropcont {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.helpdropcont a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.helpdropcont a:hover {background-color: #ddd;}
+
+.helpdropdown:hover .helpdropcont {display: block;}
+
+.helpdropdown:hover .helpbutton {background-color: rgb(114, 72, 135);}
+
+footer {
+    background-image:url("../Images/headerbackground.png");
+    height: 10%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-style: solid none none none;
+    border-color: black;
+    position: relative;
+    bottom: 0;
+}
+footer a {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position:relative;
+    bottom: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .dropdowns{
+    bottom: 85%;
+    left: 18%;
+  }
+  .helpbutton {
+    margin: 2px;
+    font-size: 10px;
+  }
+  .tcgbutton {
+    margin: 2px;
+    font-size: 10px;
+  }
+  .accbutton {
+    margin: 2px;
+    font-size: 10px;
+  }
+  header img {
+    width: 100px;
+  }
+  button.cartbarbutton {
+    font-size: 10px;
+    margin: 2px;
+  }
+  .productlist {
+    grid-template-columns: repeat(
+      1,
+      minmax(min(100%, 18rem), 3fr)
+    );
+  }
+  footer{
+    font-size: 10px;
+    position: unset;
+    margin-top: auto;
+  }
+  footer a{
+    font-size: 10px;
+  }
+  .cartbarbutton img{
+    width: 30px;
+    height: auto;
+  }
+  .helpdropcont{
+    min-width: unset;
+    width: min-content;
+  }
+  .carddropcont{
+    min-width: unset;
+    width: min-content;
+  }
+  .accdropcont{
+    min-width: unset;
+    width: min-content;
+  }
+  .helpdropcont a {
+    font-size: 10px;
+    text-align: left;
+  }
+  .carddropcont a {
+    font-size: 10px;
+    text-align: left;
+  }
+  .accdropcont a {
+    font-size: 10px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,246 @@
+html {
+    overflow-x: hidden;
+}
+.body {
+    max-width: min-content;
+    max-height: min-content;
+}
+body {
+    background-color:#a8b8d0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.bottombar a {
+    float: center;
+}
+.bottombar {
+    float: center;
+    float: bottom;
+}
+main a {
+    text-align: center;
+    color: black
+}
+main {
+    height: 500px;
+    width: 100%;
+}
+.dropdowns {
+  text-align: right;
+  margin: 50px;
+  position: fixed;
+  bottom: 85%;
+  left: 20%;
+}
+.tcgbutton {
+  background-color: rgb(134, 92, 155);
+  color: white;
+  padding: 5px;
+  margin: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+.carddropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.carddropcont {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.carddropcont a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.carddropcont a:hover {background-color: #ddd;}
+
+.carddropdown:hover .carddropcont {display: block;}
+
+.carddropdown:hover .tcgbutton {background-color: rgb(114, 72, 135);}
+
+.accbutton {
+  background-color: rgb(134, 92, 155);
+  color: white;
+  padding: 5px;
+  margin: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.accdropcont {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.accdropcont a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.accdropcont a:hover {background-color: #ddd;}
+
+.accdropdown:hover .accdropcont {display: block;}
+
+.accdropdown:hover .accbutton {background-color: rgb(114, 72, 135);}
+
+.helpbutton {
+  background-color: rgb(134, 92, 155);
+  color: white;
+  padding: 5px;
+  margin: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.helpdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.helpdropcont {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.helpdropcont a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.helpdropcont a:hover {background-color: #ddd;}
+
+.helpdropdown:hover .helpdropcont {display: block;}
+
+.helpdropdown:hover .helpbutton {background-color: rgb(114, 72, 135);}
+
+.bottombar a {
+    float: center;
+}
+.bottombar {
+    float: center;
+    float: bottom;
+}
+.About1 {
+    max-height: 300px;
+    max-width: 300px;
+    position: relative;
+    right: 25%;
+}
+.About2 {
+    max-height: 300px;
+    max-width: 300px;
+    position: relative;
+    bottom: 20%;
+    left: 25%;
+}
+.About3 {
+    max-height: 300px;
+    max-width: 300px;
+    position: relative;
+    right: 25%;
+    bottom: 20%;
+}
+main a {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+main {
+    height: 500px;
+    width: 100%;
+    font-size: 20px;
+}
+.Text1 {
+    position:relative;
+    top: 25%;
+}
+.Text2 {
+    position:relative;
+    top: 20%;
+}
+.Text3 {
+    position:relative;
+    top: 20%;
+}
+.header {
+    max-width: 100%;
+    max-height: 150px;
+}
+.footer {
+    max-width: 100%;
+    max-height: 150px;
+}
+header {
+    background-image:url("../Images/headerbackground.png");
+    height: 12%;
+    width: 100%;
+    text-align: left;
+    position: fixed;
+    top: 0px;
+    border-style: none none solid none;
+    border-color: black;
+    z-index: 100;
+}
+
+
+header a {
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 5%;
+}
+
+footer {
+    background-image:url("../Images/headerbackground.png");
+    height: 100px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-style: solid none none none;
+    border-color: black;
+    position:relative;
+    top: 700px;
+}
+footer a {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position:relative;
+    bottom: 10%;
+}
