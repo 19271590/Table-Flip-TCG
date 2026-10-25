@@ -4,18 +4,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales website to device resolution.-->
         <link rel="stylesheet" href="CSS/homepage.css"> <!--Imports CSS Style sheet-->
         <title>Table Flip TCG</title> <!--Decides what the tab text says-->
+        <link rel="shortcut icon" type="image/x-icon" href="Images\favicon.ico">
     </head>
 
     <body>
+        <div id="main">
+            <button class="cartbarbutton" onclick="openNav()"><img src="Images/cart.png"></button>
+            <div class="cartcount" id="cartCount">0</div>
+            <div id="cartbar" class="sidebar">
+                <a href="javascript:void(0)" class="closecart" onclick="closeNav()">&times;</a>
+                <aside== class="cartdisplay">
+                    <h2>Your Cart</h2>
+                    <div class="cartitems">
+                    </div>
+                    <div class="carttotal">
+                        <p><strong>Total: £<span id="total">0.00</span></strong></p>
+                    </div>
+                </aside>
+            </div>
         <header>
             <br>
-            <h1><a href="index.html">Table Flip TCG</a></h1> <!--Links back to home page from the header-->
+            <h1><a href="index.html"><img src="Images/Logo.png"></a></h1> <!--Links back to home page from the header--><!--Links back to home page from the header-->
             <br>
             <div class="dropdowns">
                 <div class="carddropdown">
-                    <button class="tcgbutton">Cards</button>
+                    <button class="tcgbutton" onclick="document.location='cardproducts.html'">Cards &#9660;</button>
                         <div class="carddropcont">
-                            <a href="cardproducts.html">All TCGs</a>
                             <a href="pokemon.html">Pokemon</a>
                             <a href="Cyberpunk.html">Cyberpunk TCG</a>
                             <a href="mtg.html">Magic: The Gathering</a>
@@ -23,9 +37,8 @@
                         </div>
                 </div>
                 <div class="accdropdown">
-                    <button class="accbutton">Accessories</button>
+                    <button class="accbutton" onclick="document.location='accessories.html'">Accessories &#9660;</button>
                         <div class="accdropcont">
-                            <a href="accessories.html">All accessories</a>
                             <a href="playmats.html">Playmats</a>
                             <a href="sleeves.html">Sleeves</a>
                             <a href="deckbox.html">Deck Boxes</a>
@@ -34,7 +47,7 @@
                         </div>
                 </div>
                 <div class="helpdropdown">
-                    <button class="helpbutton">Help</button>
+                    <button class="helpbutton" onclick="document.location='help.html'">Help &#9660;</button>
                         <div class="helpdropcont">
                             <a href="help.html">Help & FAQ</a>
                             <a href="contact.html">Contact Us</a>
@@ -44,10 +57,70 @@
             </div>
         </header>
             <main>
-                    <img src="Images/banner.png" alt="Placeholder Banner."> <!--Displays banner and alternative text.-->
-                    <h2>New products!</h2>
-                </main>
+            <!-- Slideshow container -->
+            <div class="slideshow">
+            <!-- Full-width images with number and caption text -->
+            <div class="slide fade">
+                <img src="Images/img1.png" style="width:100%">
+            </div>
 
+            <div class="slide fade">
+                <img src="Images/img2.png" style="width:100%">
+            </div>
+
+            <div class="slide fade">
+                <img src="Images/img1.png" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <section class="products">
+                <h2><br><br><br>Explore our latest products!</h2>
+                <div class="productlist">
+                        <div class="productdisplay" 
+                        data-id="19" 
+                        data-name="Cyberpunk TCG: Welcome to Night City Booster Box" 
+                        data-price="119.99"
+                        data-image="Images/wtncbb.png">
+                        <img id="productImage" src="Images/wtncbb.png" alt="Cyberpunk TCG: Welcome to Night City Booster Box">
+                        <h3>Cyberpunk TCG: Welcome to Night City <br>
+                            Booster Box</h3>
+                        <p class="price">£119.99</p>
+                        <button class="addbutton">Add to Cart</button>
+                        </div>
+                        <div class="productdisplay" 
+                        data-id="20" 
+                        data-name="Cyberpunk TCG: Welcome to Night City Starter Deck - The Heist" 
+                        data-price="29.99" 
+                        data-image="Images/thsd.png">
+                        <img id="productImage" src="Images/thsd.png" alt="Cyberpunk TCG: Welcome to Night City Starter Deck - The Heist">
+                        <h3>Cyberpunk TCG: Welcome to Night City <br>
+                            Starter Deck - The Heist</h3>
+                        <p class="price">£29.99</p>
+                        <button class="addbutton">Add to Cart</button>
+                    </div>
+                        <div class="productdisplay" 
+                        data-id="1" 
+                        data-name="Pokemon 30th ETB" 
+                        data-price="49.99"
+                        data-image="Images/30etb.png">
+                        <img id="productImage" src="Images/30etb.png" alt="Pokemon 30th Anniversary Elite Trainer Box">
+                        <h3>Pokemon 30th Anniversary<br>Elite Trainer Box</h3>
+                        <p class="price">£49.99</p>
+                        <button class="addbutton">Add to Cart</button>
+                    </div>
+            </section>
+                </main>
                     <footer>
                         <br>
                         <p>Table Flip TCG</p>
@@ -57,5 +130,7 @@
                         <a href="contact.html">Contact us</a>
                         </nav class="bottombar">
                     </footer>
+                    <script src="Scripts/cart.js"></script>
+                    <script src="Scripts/slideshow.js"></script>
     </body>
 </html>

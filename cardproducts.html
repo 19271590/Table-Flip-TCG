@@ -2,20 +2,20 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales website to device resolution.-->
-        <link rel="stylesheet" href="CSS/homepage.css"> <!--Imports CSS Style sheet-->
-        <title>Table Flip TCG</title> <!--Decides what the tab text says-->
+        <link rel="stylesheet" href="CSS/cardproducts.css"> <!--Imports CSS Style sheet-->
+        <title>All TCGs</title> <!--Decides what the tab text says-->
+        <link rel="shortcut icon" type="image/x-icon" href="Images\favicon.ico">
     </head>
 
     <body>
         <header>
             <br>
-            <h1><a href="index.html">Table Flip TCG</a></h1> <!--Links back to home page from the header-->
+            <h1><a href="index.html"><img src="Images/Logo.png"></a></h1> <!--Links back to home page from the header-->
             <br>
             <div class="dropdowns">
                 <div class="carddropdown">
-                    <button class="tcgbutton">Cards</button>
+                    <button class="tcgbutton" onclick="document.location='cardproducts.html'">Cards &#9660;</button>
                         <div class="carddropcont">
-                            <a href="cardproducts.html">All TCGs</a>
                             <a href="pokemon.html">Pokemon</a>
                             <a href="Cyberpunk.html">Cyberpunk TCG</a>
                             <a href="mtg.html">Magic: The Gathering</a>
@@ -23,9 +23,8 @@
                         </div>
                 </div>
                 <div class="accdropdown">
-                    <button class="accbutton">Accessories</button>
+                    <button class="accbutton" onclick="document.location='accessories.html'">Accessories &#9660;</button>
                         <div class="accdropcont">
-                            <a href="accessories.html">All accessories</a>
                             <a href="playmats.html">Playmats</a>
                             <a href="sleeves.html">Sleeves</a>
                             <a href="deckbox.html">Deck Boxes</a>
@@ -34,7 +33,7 @@
                         </div>
                 </div>
                 <div class="helpdropdown">
-                    <button class="helpbutton">Help</button>
+                    <button class="helpbutton" onclick="document.location='help.html'">Help &#9660;</button>
                         <div class="helpdropcont">
                             <a href="help.html">Help & FAQ</a>
                             <a href="contact.html">Contact Us</a>
@@ -77,5 +76,3 @@
                     </footer>
     </body>
 </html>
-
-Quack

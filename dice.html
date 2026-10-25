@@ -5,45 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales website to device resolution.-->
         <link rel="stylesheet" href="CSS/dice.css"> <!--Imports CSS Style sheet-->
         <title>Dice, Counters, and Coins</title> <!--Decides what the tab text says-->
+        <link rel="shortcut icon" type="image/x-icon" href="Images\favicon.ico">
     </head>
-
     <body>
-        <header>
-            <br>
-            <h1><a href="index.html">Table Flip TCG</a></h1> <!--Links back to home page from the header-->
-            <div class="dropdowns">
-                <div class="carddropdown">
-                    <button class="tcgbutton">Cards</button>
-                        <div class="carddropcont">
-                            <a href="cardproducts.html">All TCGs</a>
-                            <a href="pokemon.html">Pokemon</a>
-                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
-                            <a href="mtg.html">Magic: The Gathering</a>
-                            <a href="lorcana.html">Lorcana</a>
-                        </div>
-                </div>
-                <div class="accdropdown">
-                    <button class="accbutton">Accessories</button>
-                        <div class="accdropcont">
-                            <a href="accessories.html">All accessories</a>
-                            <a href="playmats.html">Playmats</a>
-                            <a href="sleeves.html">Sleeves</a>
-                            <a href="deckbox.html">Deck Boxes</a>
-                            <a href="dice.html">Dice, Counters, and Coins</a>
-                            <a href="binders.html">Binders</a>
-                        </div>
-                </div>
-                <div class="helpdropdown">
-                    <button class="helpbutton">Help</button>
-                        <div class="helpdropcont">
-                            <a href="help.html">Help & FAQ</a>
-                            <a href="contact.html">Contact Us</a>
-                            <a href="about.html">About Us</a>
-                        </div>
-                </div>
-            </div>
-            <div id="main">
-            <button class="cartbarbutton" onclick="openNav()">Cart</button>
+        <div id="main">
+            <button class="cartbarbutton" onclick="openNav()"><img src="Images/cart.png"></button>
             <div class="cartcount" id="cartCount">0</div>
             <div id="cartbar" class="sidebar">
                 <a href="javascript:void(0)" class="closecart" onclick="closeNav()">&times;</a>
@@ -56,73 +22,141 @@
                     </div>
                 </aside>
             </div>
+        <header>
+            <br>
+            <h1><a href="index.html"><img src="Images/Logo.png"></a></h1> <!--Links back to home page from the header-->
+            <div class="dropdowns">
+                <div class="carddropdown">
+                    <button class="tcgbutton" onclick="document.location='cardproducts.html'">Cards &#9660;</button>
+                        <div class="carddropcont">
+                            <a href="pokemon.html">Pokemon</a>
+                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
+                            <a href="mtg.html">Magic: The Gathering</a>
+                            <a href="lorcana.html">Lorcana</a>
+                        </div>
+                </div>
+                <div class="accdropdown">
+                    <button class="accbutton" onclick="document.location='accessories.html'">Accessories &#9660;</button>
+                        <div class="accdropcont">
+                            <a href="playmats.html">Playmats</a>
+                            <a href="sleeves.html">Sleeves</a>
+                            <a href="deckbox.html">Deck Boxes</a>
+                            <a href="dice.html">Dice, Counters, and Coins</a>
+                            <a href="binders.html">Binders</a>
+                        </div>
+                </div>
+                <div class="helpdropdown">
+                    <button class="helpbutton" onclick="document.location='help.html'">Help &#9660;</button>
+                        <div class="helpdropcont">
+                            <a href="help.html">Help & FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="about.html">About Us</a>
+                        </div>
+                </div>
+            </div>
             </header>
             <main class="container">
         <section class="products">
-            <h2>Our Products</h2>
+            <h2><br><br><br><br><br>Dice, Counters, and Coins</h2>
             <div class="productlist">
-                <div class="productdisplay" data-id="59" data-name="Fanroll Individual D20 Elixir Liquid Core Dice: Sorcerous Swirl" data-price="14.99">
-                    <img src="Images/fd20ss.png" alt="Fanroll Individual D20 Elixir Liquid Core Dice: Sorcerous Swirl">
+                <div class="productdisplay" 
+                data-id="59" 
+                data-name="Fanroll Individual D20 Elixir Liquid Core Dice: Sorcerous Swirl" 
+                data-price="14.99"
+                data-image="Images/fd20ss.png">
+                    <img id="productImage" src="Images/fd20ss.png" alt="Fanroll Individual D20 Elixir Liquid Core Dice: Sorcerous Swirl">
                     <h3>Fanroll Individual D20 <br>
                         Elixir Liquid Core Dice: <br>
                         Sorcerous Swirl</h3>
                     <p class="price">£14.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-                <div class="productdisplay" data-id="60" data-name="Fanroll Individual D20 Elixir Liquid Core Dice: Disco Vibes" data-price="14.99">
-                    <img src="Images/fd20dv.png" alt="Fanroll Individual D20 Elixir Liquid Core Dice: Disco Vibes">
+                <div class="productdisplay" 
+                data-id="60" 
+                data-name="Fanroll Individual D20 Elixir Liquid Core Dice: Disco Vibes" 
+                data-price="14.99"
+                data-image="Images/fd20dv.png">
+                    <img id="productImage" src="Images/fd20dv.png" alt="Fanroll Individual D20 Elixir Liquid Core Dice: Disco Vibes">
                     <h3>Fanroll Individual D20 <br>
                         Elixir Liquid Core Dice: <br>
                         Disco Vibes</h3>
                     <p class="price">£14.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="61" data-name="Treasures Unearthed 7-Piece Polyhedral - Opal" data-price="14.99">
-                    <img src="Images/tu7po.png" alt="Treasures Unearthed 7-Piece Polyhedral - Opal">   
+            <div class="productdisplay" 
+            data-id="61" 
+            data-name="Treasures Unearthed 7-Piece Polyhedral - Opal" 
+            data-price="14.99"
+            data-image="Images/tu7po.png">
+                    <img id="productImage" src="Images/tu7po.png" alt="Treasures Unearthed 7-Piece Polyhedral - Opal">   
                     <h3>Treasures Unearthed <br>
                         7-Piece Polyhedral <br>
                         Opal</h3>
                     <p class="price">£14.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="62" data-name="Treasures Unearthed 7-Piece Polyhedral - Onyx" data-price="14.99">
-                    <img src="Images/tu7pon.png" alt="Treasures Unearthed 7-Piece Polyhedral - Onyx">   
+            <div class="productdisplay" 
+            data-id="62" 
+            data-name="Treasures Unearthed 7-Piece Polyhedral - Onyx" 
+            data-price="14.99"
+            data-image="Images/tu7pon.png">
+                    <img id="productImage" src="Images/tu7pon.png" alt="Treasures Unearthed 7-Piece Polyhedral - Onyx">   
                     <h3>Treasures Unearthed <br>
                         7-Piece Polyhedral <br>
                         Onyx</h3>
                     <p class="price">£14.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="63" data-name="Mystery Metal Dice - Mystery Dice Pack" data-price="24.99">
-                    <img src="Images/mmd.png" alt="Mystery Metal Dice - Mystery Dice Pack">
+            <div class="productdisplay" 
+            data-id="63" 
+            data-name="Mystery Metal Dice - Mystery Dice Pack" 
+            data-price="24.99"
+            data-image="Images/mmd.png">
+                    <img id="productImage" src="Images/mmd.png" alt="Mystery Metal Dice - Mystery Dice Pack">
                     <h3>Mystery Metal Dice <br>
                         Mystery Dice Pack</h3>
                     <p class="price">£24.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="64" data-name="Mystery Liquid Core Dice - Mystery Dice Pack" data-price="24.99">
-                    <img src="Images/mld.png" alt="Mystery Liquid Core Dice - Mystery Dice Pack">
+            <div class="productdisplay" 
+            data-id="64" 
+            data-name="Mystery Liquid Core Dice - Mystery Dice Pack" 
+            data-price="24.99"
+            data-image="Images/mld.png">
+                    <img id="productImage" src="Images/mld.png" alt="Mystery Liquid Core Dice - Mystery Dice Pack">
                     <h3>Mystery Liquid Core Dice <br>
                         Mystery Dice Pack</h3>
                     <p class="price">£24.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="65" data-name="Gamegenic Magic: The Gathering Secrets of Strixhaven - Double Life Counter" data-price="9.99">
-                    <img src="Images/mtglc.png" alt="Gamegenic Magic: The Gathering Secrets of Strixhaven - Double Life Counter">
+            <div class="productdisplay" 
+            data-id="65" 
+            data-name="Gamegenic Magic: The Gathering Secrets of Strixhaven - Double Life Counter" 
+            data-price="9.99"
+            data-image="Images/mtglc.png">
+                    <img id="productImage" src="Images/mtglc.png" alt="Gamegenic Magic: The Gathering Secrets of Strixhaven - Double Life Counter">
                     <h3>Gamegenic Magic: The Gathering Secrets of Strixhaven <br>
                         Double Life Counter</h3>
                     <p class="price">£9.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="66" data-name="Dungeons & Dragons Collectable Coin" data-price="9.99">
-                    <img src="Images/ddc.png" alt="Dungeons & Dragons Collectable Coin">
+            <div class="productdisplay" 
+            data-id="66" 
+            data-name="Dungeons & Dragons Collectable Coin" 
+            data-price="9.99"
+            data-image="Images/ddc.png">
+                    <img id="productImage" src="Images/ddc.png" alt="Dungeons & Dragons Collectable Coin">
                     <h3>Dungeons & Dragons <br>
                         Collectable Coin</h3>
                     <p class="price">£9.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="67" data-name="Pokemon Scarlet & Violet Condition Markers" data-price="0.25">
-                    <img src="Images/pcm.png" alt="Pokemon Scarlet & Violet Condition Markers">
+            <div class="productdisplay" 
+            data-id="67" 
+            data-name="Pokemon Scarlet & Violet Condition Markers" 
+            data-price="0.25"
+            data-image="Images/pcm.png">
+                    <img id="productImage" src="Images/pcm.png" alt="Pokemon Scarlet & Violet Condition Markers">
                     <h3>Pokemon Scarlet & Violet <br>
                         Condition Markers</h3>
                     <p class="price">£0.25</p>

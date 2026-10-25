@@ -5,45 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales website to device resolution.-->
         <link rel="stylesheet" href="CSS/playmats.css"> <!--Imports CSS Style sheet-->
         <title>Playmats</title> <!--Decides what the tab text says-->
+        <link rel="shortcut icon" type="image/x-icon" href="Images\favicon.ico">
     </head>
-
     <body>
-        <header>
-            <br>
-            <h1><a href="index.html">Table Flip TCG</a></h1> <!--Links back to home page from the header-->
-            <div class="dropdowns">
-                <div class="carddropdown">
-                    <button class="tcgbutton">Cards</button>
-                        <div class="carddropcont">
-                            <a href="cardproducts.html">All TCGs</a>
-                            <a href="pokemon.html">Pokemon</a>
-                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
-                            <a href="mtg.html">Magic: The Gathering</a>
-                            <a href="lorcana.html">Lorcana</a>
-                        </div>
-                </div>
-                <div class="accdropdown">
-                    <button class="accbutton">Accessories</button>
-                        <div class="accdropcont">
-                            <a href="accessories.html">All accessories</a>
-                            <a href="playmats.html">Playmats</a>
-                            <a href="sleeves.html">Sleeves</a>
-                            <a href="deckbox.html">Deck Boxes</a>
-                            <a href="dice.html">Dice, Counters, and Coins</a>
-                            <a href="binders.html">Binders</a>
-                        </div>
-                </div>
-                <div class="helpdropdown">
-                    <button class="helpbutton">Help</button>
-                        <div class="helpdropcont">
-                            <a href="help.html">Help & FAQ</a>
-                            <a href="contact.html">Contact Us</a>
-                            <a href="about.html">About Us</a>
-                        </div>
-                </div>
-            </div>
-            <div id="main">
-            <button class="cartbarbutton" onclick="openNav()">Cart</button>
+        <div id="main">
+            <button class="cartbarbutton" onclick="openNav()"><img src="Images/cart.png"></button>
             <div class="cartcount" id="cartCount">0</div>
             <div id="cartbar" class="sidebar">
                 <a href="javascript:void(0)" class="closecart" onclick="closeNav()">&times;</a>
@@ -56,68 +22,136 @@
                     </div>
                 </aside>
             </div>
+        <header>
+            <br>
+            <h1><a href="index.html"><img src="Images/Logo.png"></a></h1> <!--Links back to home page from the header-->
+            <div class="dropdowns">
+                <div class="carddropdown">
+                    <button class="tcgbutton" onclick="document.location='cardproducts.html'">Cards &#9660;</button>
+                        <div class="carddropcont">
+                            <a href="pokemon.html">Pokemon</a>
+                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
+                            <a href="mtg.html">Magic: The Gathering</a>
+                            <a href="lorcana.html">Lorcana</a>
+                        </div>
+                </div>
+                <div class="accdropdown">
+                    <button class="accbutton" onclick="document.location='accessories.html'">Accessories &#9660;</button>
+                        <div class="accdropcont">
+                            <a href="playmats.html">Playmats</a>
+                            <a href="sleeves.html">Sleeves</a>
+                            <a href="deckbox.html">Deck Boxes</a>
+                            <a href="dice.html">Dice, Counters, and Coins</a>
+                            <a href="binders.html">Binders</a>
+                        </div>
+                </div>
+                <div class="helpdropdown">
+                    <button class="helpbutton" onclick="document.location='help.html'">Help &#9660;</button>
+                        <div class="helpdropcont">
+                            <a href="help.html">Help & FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="about.html">About Us</a>
+                        </div>
+                </div>
+            </div>
             </header>
             <main class="container">
         <section class="products">
-            <h2>Our Products</h2>
+            <h2><br><br><br><br><br>Playmats</h2>
             <div class="productlist">
-                <div class="productdisplay" data-id="32" data-name="Ultra Pro Lillie and Clefairy Playmat" data-price="19.99">
-                    <img src="Images/uplcp.png" alt="Ultra Pro Lillie and Clefairy Playmat">
+                <div class="productdisplay" 
+                data-id="32" 
+                data-name="Ultra Pro Lillie and Clefairy Playmat" 
+                data-price="19.99"
+                data-image="Images/uplcp.png">
+                    <img id="productImage" src="Images/uplcp.png" alt="Ultra Pro Lillie and Clefairy Playmat">
                     <h3>Ultra Pro Pokemon<br>
                         Lillie and Clefairy Playmat</h3>
                     <p class="price">£19.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-                <div class="productdisplay" data-id="33" data-name="Ultra Pro Fallout Playmat" data-price="19.99">
-                    <img src="Images/upfp.png" alt="Ultra Pro Fallout Playmat">
+                <div class="productdisplay" 
+                data-id="33" 
+                data-name="Ultra Pro Fallout Playmat" 
+                data-price="19.99"
+                data-image="Images/upfp.png">
+                    <img id="productImage" src="Images/upfp.png" alt="Ultra Pro Fallout Playmat">
                     <h3>Ultra Pro Magic: The Gathering<br>
                         Fallout Playmat</h3>
                     <p class="price">£19.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="34" data-name="Gamegenic Playmat Tube Red" data-price="8.99">
-                    <img src="Images/gptr.png" alt="Gamegenic Playmat Tube Red">   
+            <div class="productdisplay" 
+            data-id="34" 
+            data-name="Gamegenic Playmat Tube Red" 
+            data-price="8.99"
+            data-image="Images/gptr.png">
+                    <img id="productImage" src="Images/gptr.png" alt="Gamegenic Playmat Tube Red">   
                     <h3>Gamegenic <br>
                         Playmat Tube Red</h3>
                     <p class="price">£8.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="35" data-name="Ultra Pro Solid Color Standard Gaming Playmat - Orange" data-price="13.99">
-                    <img src="Images/upscpo.png" alt="Ultra Pro Solid Color Standard Gaming Playmat - Orange">
+            <div class="productdisplay" 
+            data-id="35" 
+            data-name="Ultra Pro Solid Color Standard Gaming Playmat - Orange" 
+            data-price="13.99"
+            data-image="Images/upscpo.png">
+                    <img id="productImage" src="Images/upscpo.png" alt="Ultra Pro Solid Color Standard Gaming Playmat - Orange">
                     <h3>Ultra Pro Solid Color <br>
                         Standard Gaming Playmat - Orange</h3>
                     <p class="price">£13.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="36" data-name="Ultra Pro Solid Color Standard Gaming Playmat - Purple" data-price="13.99">
-                    <img src="Images/upscpp.png" alt="Ultra Pro Solid Color Standard Gaming Playmat - Purple">
+            <div class="productdisplay" 
+            data-id="36" 
+            data-name="Ultra Pro Solid Color Standard Gaming Playmat - Purple" 
+            data-price="13.99"
+            data-image="Images/upscpp.png">
+                    <img id="productImage" src="Images/upscpp.png" alt="Ultra Pro Solid Color Standard Gaming Playmat - Purple">
                     <h3>Ultra Pro Solid Color <br>
                         Standard Gaming Playmat - Purple</h3>
                     <p class="price">£13.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="37" data-name="Ultra Pro Solid Color Standard Gaming Playmat - Green" data-price="13.99">
-                    <img src="Images/upscpg.png" alt="Ultra Pro Solid Color Standard Gaming Playmat - Green">
+            <div class="productdisplay"
+             data-id="37" 
+             data-name="Ultra Pro Solid Color Standard Gaming Playmat - Green" 
+             data-price="13.99"
+             data-image="Images/upscpg.png">
+                    <img id="productImage" src="Images/upscpg.png" alt="Ultra Pro Solid Color Standard Gaming Playmat - Green">
                     <h3>Ultra Pro Solid Color Standard Gaming Playmat - Green</h3>
                     <p class="price">£13.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="38" data-name="Ultra Pro Solid Color Standard Gaming Playmat - Pink" data-price="13.99">
-                    <img src="Images/upscppi.png" alt="Ultra Pro Solid Color Standard Gaming Playmat - Pink">
+            <div class="productdisplay" 
+            data-id="38" 
+            data-name="Ultra Pro Solid Color Standard Gaming Playmat - Pink" 
+            data-price="13.99"
+            data-image="Images/upscppi.png">
+                    <img id="productImage" src="Images/upscppi.png" alt="Ultra Pro Solid Color Standard Gaming Playmat - Pink">
                     <h3>Ultra Pro Solid Color Standard Gaming Playmat - Pink</h3>
                     <p class="price">£13.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="39" data-name="Gamegenic Magic: the Gathering Reality Fracture Prime Playmat - Entrust the Spark" data-price="19.99">
-                    <img src="Images/gmtgrfp.png" alt="Gamegenic Magic: the Gathering Reality Fracture Prime Playmat - Entrust the Spark">
+            <div class="productdisplay" 
+            data-id="39" 
+            data-name="Gamegenic Magic: the Gathering Reality Fracture Prime Playmat - Entrust the Spark" 
+            data-price="19.99"
+            data-image="Images/gmtgrfp.png">
+                    <img id="productImage" src="Images/gmtgrfp.png" alt="Gamegenic Magic: the Gathering Reality Fracture Prime Playmat - Entrust the Spark">
                     <h3>Gamegenic Magic: the Gathering <br>
                         Reality Fracture Prime Playmat <br>
                         Entrust the Spark</h3>
                     <p class="price">£19.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="40" data-name="Gamegenic Magic: The Gathering Marvel Super Heroes Prime 2-Player Playmat - Iron Man/Captain America" data-price="29.99">
-                    <img src="Images/gmtgsh2.png" alt="Gamegenic Magic: The Gathering Marvel Super Heroes Prime 2-Player Playmat Iron Man/Captain America">
+            <div class="productdisplay" 
+            data-id="40" 
+            data-name="Gamegenic Magic: The Gathering Marvel Super Heroes Prime 2-Player Playmat - Iron Man/Captain America" 
+            data-price="29.99"
+            data-image="Images/gmtgsh2.png">
+                    <img id="productImage" src="Images/gmtgsh2.png" alt="Gamegenic Magic: The Gathering Marvel Super Heroes Prime 2-Player Playmat Iron Man/Captain America">
                     <h3>Gamegenic Magic: The Gathering <br>
                         Marvel Super Heroes Prime <br>
                         2-Player Playmat <br>

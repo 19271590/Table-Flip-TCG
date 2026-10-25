@@ -1,49 +1,14 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales website to device resolution.-->
         <link rel="stylesheet" href="CSS/cyberpunk.css"> <!--Imports CSS Style sheet-->
         <title>Cyberpunk TCG</title> <!--Decides what the tab text says-->
+        <link rel="shortcut icon" type="image/x-icon" href="Images\favicon.ico">
     </head>
-
     <body>
-        <header>
-            <br>
-            <h1><a href="index.html">Table Flip TCG</a></h1> <!--Links back to home page from the header-->
-            <div class="dropdowns">
-                <div class="carddropdown">
-                    <button class="tcgbutton">Cards</button>
-                        <div class="carddropcont">
-                            <a href="cardproducts.html">All TCGs</a>
-                            <a href="pokemon.html">Pokemon</a>
-                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
-                            <a href="mtg.html">Magic: The Gathering</a>
-                            <a href="lorcana.html">Lorcana</a>
-                        </div>
-                </div>
-                <div class="accdropdown">
-                    <button class="accbutton">Accessories</button>
-                        <div class="accdropcont">
-                            <a href="accessories.html">All accessories</a>
-                            <a href="playmats.html">Playmats</a>
-                            <a href="sleeves.html">Sleeves</a>
-                            <a href="deckbox.html">Deck Boxes</a>
-                            <a href="dice.html">Dice, Counters, and Coins</a>
-                            <a href="binders.html">Binders</a>
-                        </div>
-                </div>
-                <div class="helpdropdown">
-                    <button class="helpbutton">Help</button>
-                        <div class="helpdropcont">
-                            <a href="help.html">Help & FAQ</a>
-                            <a href="contact.html">Contact Us</a>
-                            <a href="about.html">About Us</a>
-                        </div>
-                </div>
-            </div>
-            <div id="main">
-            <button class="cartbarbutton" onclick="openNav()">Cart</button>
+        <div id="main">
+            <button class="cartbarbutton" onclick="openNav()"><img src="Images/cart.png"></button>
             <div class="cartcount" id="cartCount">0</div>
             <div id="cartbar" class="sidebar">
                 <a href="javascript:void(0)" class="closecart" onclick="closeNav()">&times;</a>
@@ -56,34 +21,82 @@
                     </div>
                 </aside>
             </div>
+        <header>
+            <br>
+            <h1><a href="index.html"><img src="Images/Logo.png"></a></h1> <!--Links back to home page from the header-->
+            <div class="dropdowns">
+                <div class="carddropdown">
+                    <button class="tcgbutton" onclick="document.location='cardproducts.html'">Cards &#9660;</button>
+                        <div class="carddropcont">
+                            <a href="pokemon.html">Pokemon</a>
+                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
+                            <a href="mtg.html">Magic: The Gathering</a>
+                            <a href="lorcana.html">Lorcana</a>
+                        </div>
+                </div>
+                <div class="accdropdown">
+                    <button class="accbutton" onclick="document.location='accessories.html'">Accessories &#9660;</button>
+                        <div class="accdropcont">
+                            <a href="playmats.html">Playmats</a>
+                            <a href="sleeves.html">Sleeves</a>
+                            <a href="deckbox.html">Deck Boxes</a>
+                            <a href="dice.html">Dice, Counters, and Coins</a>
+                            <a href="binders.html">Binders</a>
+                        </div>
+                </div>
+                <div class="helpdropdown">
+                    <button class="helpbutton" onclick="document.location='help.html'">Help &#9660;</button>
+                        <div class="helpdropcont">
+                            <a href="help.html">Help & FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="about.html">About Us</a>
+                        </div>
+                </div>
+            </div>
             </header>
             <main class="container">
         <section class="products">
-            <h2>Our Products</h2>
+            <h2><br><br><br><br><br>Cyberpunk TCG</h2>
             <div class="productlist">
-                <div class="productdisplay" data-id="19" data-name="Cyberpunk TCG: Welcome to Night City Booster Box" data-price="119.99">
-                    <img src="Images/wtncbb.png" alt="Cyberpunk TCG: Welcome to Night City Booster Box">
+                <div class="productdisplay" 
+                data-id="19" 
+                data-name="Cyberpunk TCG: Welcome to Night City Booster Box" 
+                data-price="119.99"
+                data-image="Images/wtncbb.png">
+                    <img id="productImage" src="Images/wtncbb.png" alt="Cyberpunk TCG: Welcome to Night City Booster Box">
                     <h3>Cyberpunk TCG: Welcome to Night City <br>
                         Booster Box</h3>
                     <p class="price">£119.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-                <div class="productdisplay" data-id="20" data-name="Cyberpunk TCG: Welcome to Night City Starter Deck - The Heist" data-price="29.99">
-                    <img src="Images/thsd.png" alt="Cyberpunk TCG: Welcome to Night City Starter Deck - The Heist">
+                <div class="productdisplay" 
+                data-id="20" 
+                data-name="Cyberpunk TCG: Welcome to Night City Starter Deck - The Heist" 
+                data-price="29.99"
+                data-image="Images/thsd.png">
+                    <img id="productImage" src="Images/thsd.png" alt="Cyberpunk TCG: Welcome to Night City Starter Deck - The Heist">
                     <h3>Cyberpunk TCG: Welcome to Night City <br>
                         Starter Deck - The Heist</h3>
                     <p class="price">£29.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="21" data-name="Cyberpunk TCG: Welcome to Night City Starter Deck - Embracing Power" data-price="29.99">
-                    <img src="Images/epsd.png" alt="Cyberpunk TCG: Welcome to Night City Starter Deck - Embracing Power">   
+            <div class="productdisplay" 
+            data-id="21" 
+            data-name="Cyberpunk TCG: Welcome to Night City Starter Deck - Embracing Power" 
+            data-price="29.99"
+            data-image="Images/epsd.png">
+                    <img id="productImage" src="Images/epsd.png" alt="Cyberpunk TCG: Welcome to Night City Starter Deck - Embracing Power">   
                     <h3>Cyberpunk TCG: Welcome to Night City <br>
                         Starter Deck - Embracing Power</h3>
                     <p class="price">£29.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="22" data-name="Cyberpunk TCG: Welcome to Night City Booster Pack" data-price="4.99">
-                    <img src="Images/cpbp.png" alt="Cyberpunk TCG: Welcome to Night City Booster Pack">
+            <div class="productdisplay" 
+            data-id="22" 
+            data-name="Cyberpunk TCG: Welcome to Night City Booster Pack" 
+            data-price="4.99"
+            data-image="Images/cpbp.png">
+                    <img id="productImage" src="Images/cpbp.png" alt="Cyberpunk TCG: Welcome to Night City Booster Pack">
                     <h3>Cyberpunk TCG: Welcome to Night City <br>
                         Booster Pack</h3>
                     <p class="price">£4.99</p>

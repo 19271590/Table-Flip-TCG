@@ -6,125 +6,67 @@ html {
     max-height: min-content;
 }
 body {
-    background-image: url("../Images/Background.png");
-    background-size: 100% 100%;
+    background-color:#a8b8d0;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
 }
 * {
     margin: 0;
     padding: 0;
 }
-.tcgbutton {
-  background-color: rgb(134, 92, 155);
-  color: white;
-  padding: 5px;
-  margin: 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
+.bottombar a {
+    float: center;
 }
+.bottombar {
+    float: center;
+    float: bottom;
+}
+main a {
+    text-align: center;
+    color: black
+}
+main {
+    width: 100%;
+    flex: 1;
+}
+* {box-sizing:border-box}
 
-.carddropdown {
+.products {
   position: relative;
-  display: inline-block;
+  top: 25%;
 }
-
-.carddropcont {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
+.productlist {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    minmax(min(100%, 18rem), 3fr)
+  );
+}
+.productdisplay {
+  background-color: #798fae;
+  border-radius: 12px;
+  margin: 50px;
+  padding: 20px;
+}
+.productdisplay img{
+  max-height: 200px;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+.productdisplay:hover {
+  transform: translateY(-6px);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  background-color: rgb(101, 123, 154);
 }
 
-.carddropcont a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.header {
+    max-width: 100%;
+    max-height: 25%;
 }
-
-.carddropcont a:hover {background-color: #ddd;}
-
-.carddropdown:hover .carddropcont {display: block;}
-
-.carddropdown:hover .tcgbutton {background-color: rgb(114, 72, 135);}
-
-.accbutton {
-  background-color: rgb(134, 92, 155);
-  color: white;
-  padding: 5px;
-  margin: 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-}
-
-.accdropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.accdropcont {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.accdropcont a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.accdropcont a:hover {background-color: #ddd;}
-
-.accdropdown:hover .accdropcont {display: block;}
-
-.accdropdown:hover .accbutton {background-color: rgb(114, 72, 135);}
-
-.helpbutton {
-  background-color: rgb(134, 92, 155);
-  color: white;
-  padding: 5px;
-  margin: 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-}
-
-.helpdropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.helpdropcont {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.helpdropcont a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.helpdropcont a:hover {background-color: #ddd;}
-
-.helpdropdown:hover .helpdropcont {display: block;}
-
-.helpdropdown:hover .helpbutton {background-color: rgb(114, 72, 135);}
 
 .sidebar {
   height: 100%; /* 100% Full-height */
@@ -133,10 +75,14 @@ body {
   z-index: 1; /* Stay on top */
   top: 0;
   right: 0;
-  background-color: #111; /* Black*/
+  background-color: rgb(134, 92, 155); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  z-index: 102;
+  color: white;
+  border-style: none none none solid;
+  border-color: black;
 }
 
 /* The sidebar links */
@@ -161,92 +107,44 @@ body {
 
 /* The button used to open the sidebar */
 .cartbarbutton {
-  font-size: 20px;
   cursor: pointer;
-  background-color: rgb(134, 92, 155);
-  color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
+  background-color: transparent;
 }
 button.cartbarbutton {
   position: fixed;
   top: 2%;
   right: 3%;
+  z-index: 101;
+}
+.cartbarbutton img{
+  width: 50px;
+  height: auto;
 }
 
 .cartbarbutton:hover {
-  background-color: rgb(114, 72, 125);;
+  filter: brightness(80%);
 }
 .cartcount {
   position: fixed;
   top: 2%;
   right: 3%;
-}
-
-.bottombar a {
-    float: center;
-}
-.bottombar {
-    float: center;
-    float: bottom;
-}
-main a {
-    text-align: center;
-    color: black;
-}
-main {
-    height: 500px;
-    width: 100%;
-}
-.products {
-  position: relative;
-  top: 25%;
-}
-.productlist {
-  display: grid;
-  grid-template-columns: repeat(
-    3,
-    minmax(min(100%, 18rem), 3fr)
-  );
-}
-.productdisplay {
-  background-color: #798fae;
-  border-radius: 12px;
-  margin: 50px;
-  padding: 20px;
-  min-width: fit-content;
-  min-height: auto;
-}
-.productdisplay img{
-  max-height: 200px;
-  height: 100%;
-  width: auto;
-  object-fit: cover;
-}
-.productdisplay:hover {
-  transform: translateY(-6px);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  background-color: rgb(101, 123, 154);
-}
-.cartdisplay {
-  position: relative;
-  left: 5%;
-  top: 2%;
+  z-index: 102;
   color: white;
 }
-.header {
-    width: 100%;
-    height: 25%;
-    
+.cartimage{
+  width: 100px;
+  height: auto;
 }
-.footer {
-    max-width: 100%;
-    max-height: 150px;
+.cartitems{
+  font-size: 12px;
 }
+
 header {
-    background-color: #9a70af;
-    height: 10%;
+    background-image:url("../Images/headerbackground.png");
+    height: 12%;
     width: 100%;
     text-align: left;
     position: fixed;
@@ -269,25 +167,215 @@ header a {
     top: 5%;
     font-size: 25px;
 }
-@media only screen and (max-width: 600px) {
-  header a{
-    font-size: 15px;
+header img {
+    width: 175px;
+    height: auto;
+    position: relative;
+    left: 3%;
+    bottom: 18px;
+    object-fit:cover; 
+    z-index: 99;
   }
+.tcgbutton {
+  background-color: rgb(134, 92, 155);
+  color: white;
+  padding: 5px;
+  margin: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  cursor: pointer;
 }
+
+.carddropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.carddropcont {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.carddropcont a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.carddropcont a:hover {background-color: #ddd;}
+
+.carddropdown:hover .carddropcont {display: block;}
+
+.carddropdown:hover .tcgbutton {background-color: rgb(114, 72, 135);}
+
+.accbutton {
+  background-color: rgb(134, 92, 155);
+  color: white;
+  padding: 5px;
+  margin: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.accdropcont {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.accdropcont a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.accdropcont a:hover {background-color: #ddd;}
+
+.accdropdown:hover .accdropcont {display: block;}
+
+.accdropdown:hover .accbutton {background-color: rgb(114, 72, 135);}
+
+.helpbutton {
+  background-color: rgb(134, 92, 155);
+  color: white;
+  padding: 5px;
+  margin: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.helpdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.helpdropcont {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.helpdropcont a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+.helpdropcont a:hover {background-color: #ddd;}
+
+.helpdropdown:hover .helpdropcont {display: block;}
+
+.helpdropdown:hover .helpbutton {background-color: rgb(114, 72, 135);}
+
 footer {
-    background-color: #9a70af;
-    height: 100%;
+    background-image:url("../Images/headerbackground.png");
+    height: 10%;
     width: 100%;
     color: rgb(255, 255, 255);
     text-align: center;
-    position:relative;
-    top: 1000px;
     border-style: solid none none none;
     border-color: black;
+    position: relative;
+    bottom: 0;
 }
 footer a {
     color: rgb(255, 255, 255);
     text-align: center;
     position:relative;
     bottom: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .dropdowns{
+    bottom: 85%;
+    left: 18%;
+  }
+  .helpbutton {
+    margin: 2px;
+    font-size: 10px;
+  }
+  .tcgbutton {
+    margin: 2px;
+    font-size: 10px;
+  }
+  .accbutton {
+    margin: 2px;
+    font-size: 10px;
+  }
+  header img {
+    width: 100px;
+  }
+  button.cartbarbutton {
+    font-size: 10px;
+    margin: 2px;
+  }
+  .productlist {
+    grid-template-columns: repeat(
+      1,
+      minmax(min(100%, 18rem), 3fr)
+    );
+  }
+  footer{
+    font-size: 10px;
+    position: unset;
+    margin-top: auto;
+  }
+  footer a{
+    font-size: 10px;
+  }
+  .cartbarbutton img{
+    width: 30px;
+    height: auto;
+  }
+  .helpdropcont{
+    min-width: unset;
+    width: min-content;
+  }
+  .carddropcont{
+    min-width: unset;
+    width: min-content;
+  }
+  .accdropcont{
+    min-width: unset;
+    width: min-content;
+  }
+  .helpdropcont a {
+    font-size: 10px;
+    text-align: left;
+  }
+  .carddropcont a {
+    font-size: 10px;
+    text-align: left;
+  }
+  .accdropcont a {
+    font-size: 10px;
+    text-align: left;
+  }
 }

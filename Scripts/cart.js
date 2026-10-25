@@ -1,6 +1,6 @@
 function openNav() {
+  document.getElementById("cartbar").style.maxWidth = "40%";
   document.getElementById("cartbar").style.width = "250px";
-  document.getElementById("main").style.marginRight = "250px";
 }
 
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
@@ -12,6 +12,7 @@ function closeNav() {
 // 1. The State
 let cart = [];
 let cartCount = 0;
+
 if (localStorage.getItem("count")) {
     count = parseInt(localStorage.getItem("count"));
 }
@@ -31,7 +32,7 @@ const totalEl = document.getElementById('total');
 const cartCountEl = document.getElementById('cartCount');
 
 // 3. Core Function: Add to Cart
-function addToCart(productId, productName, productPrice) {
+function addToCart(productId, productName, productPrice, productImage){
     // Check if the item is already in the cart
     const existingItem = cart.find(item => item.id === productId);
 
@@ -43,6 +44,7 @@ function addToCart(productId, productName, productPrice) {
         cart.push({
             id: productId,
             name: productName,
+            image: productImage,
             price: parseFloat(productPrice), // Ensure it's a number
             quantity: 1
         });
@@ -52,8 +54,6 @@ function addToCart(productId, productName, productPrice) {
 
     // Update the UI to reflect the new state
     renderCart();
-    showFeedback(`${productName} added to cart!`);
-        
     }
 
 // 4. Core Function: Remove from Cart
@@ -92,6 +92,7 @@ function renderCart() {
         const cartItemEl = document.createElement('div');
         cartItemEl.className = 'cart-item';
         cartItemEl.innerHTML = `
+        <img src="${item.image}" alt="${item.name}" class="cartimage">
             <div class="item-info">
                 <h4>${item.name}</h4>
                 <p>$${item.price.toFixed(2)}</p>
@@ -121,13 +122,15 @@ document.body.addEventListener('click', function(event) {
         const id = productCard.dataset.id;
         const name = productCard.dataset.name;
         const price = productCard.dataset.price;
-        addToCart(id, name, price);
+        const image = productCard.dataset.image;
+        addToCart(id, name, price, image);
     }
 
     // Handle "Increase/Decrease Quantity" and "Remove" clicks inside the cart
     if (target.classList.contains('btn-remove')) {
         const productId = (target.dataset.id);
         removeFromCart(productId);
+        localStorage.setItem("cart", JSON.stringify(cart));
     }
 
     if (target.classList.contains('btn-quantity')) {
@@ -138,8 +141,10 @@ document.body.addEventListener('click', function(event) {
         if (item) {
             if (action === 'increase') {
                 updateQuantity(productId, item.quantity + 1);
+                localStorage.setItem("cart", JSON.stringify(cart));
             } else if (action === 'decrease') {
                 updateQuantity(productId, item.quantity - 1);
+                localStorage.setItem("cart", JSON.stringify(cart));
             }
         }
     }

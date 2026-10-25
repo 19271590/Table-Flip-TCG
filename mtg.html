@@ -5,45 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales website to device resolution.-->
         <link rel="stylesheet" href="CSS/mtg.css"> <!--Imports CSS Style sheet-->
         <title>Magic: The Gathering</title> <!--Decides what the tab text says-->
+        <link rel="shortcut icon" type="image/x-icon" href="Images\favicon.ico">
     </head>
-
     <body>
-        <header>
-            <br>
-            <h1><a href="index.html">Table Flip TCG</a></h1> <!--Links back to home page from the header-->
-            <div class="dropdowns">
-                <div class="carddropdown">
-                    <button class="tcgbutton">Cards</button>
-                        <div class="carddropcont">
-                            <a href="cardproducts.html">All TCGs</a>
-                            <a href="pokemon.html">Pokemon</a>
-                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
-                            <a href="mtg.html">Magic: The Gathering</a>
-                            <a href="lorcana.html">Lorcana</a>
-                        </div>
-                </div>
-                <div class="accdropdown">
-                    <button class="accbutton">Accessories</button>
-                        <div class="accdropcont">
-                            <a href="accessories.html">All accessories</a>
-                            <a href="playmats.html">Playmats</a>
-                            <a href="sleeves.html">Sleeves</a>
-                            <a href="deckbox.html">Deck Boxes</a>
-                            <a href="dice.html">Dice, Counters, and Coins</a>
-                            <a href="binders.html">Binders</a>
-                        </div>
-                </div>
-                <div class="helpdropdown">
-                    <button class="helpbutton">Help</button>
-                        <div class="helpdropcont">
-                            <a href="help.html">Help & FAQ</a>
-                            <a href="contact.html">Contact Us</a>
-                            <a href="about.html">About Us</a>
-                        </div>
-                </div>
-            </div>
-            <div id="main">
-            <button class="cartbarbutton" onclick="openNav()">Cart</button>
+        <div id="main">
+            <button class="cartbarbutton" onclick="openNav()"><img src="Images/cart.png"></button>
             <div class="cartcount" id="cartCount">0</div>
             <div id="cartbar" class="sidebar">
                 <a href="javascript:void(0)" class="closecart" onclick="closeNav()">&times;</a>
@@ -56,69 +22,137 @@
                     </div>
                 </aside>
             </div>
+        <header>
+            <br>
+            <h1><a href="index.html"><img src="Images/Logo.png"></a></h1> <!--Links back to home page from the header-->
+            <div class="dropdowns">
+                <div class="carddropdown">
+                    <button class="tcgbutton" onclick="document.location='cardproducts.html'">Cards &#9660;</button>
+                        <div class="carddropcont">
+                            <a href="pokemon.html">Pokemon</a>
+                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
+                            <a href="mtg.html">Magic: The Gathering</a>
+                            <a href="lorcana.html">Lorcana</a>
+                        </div>
+                </div>
+                <div class="accdropdown">
+                    <button class="accbutton" onclick="document.location='accessories.html'">Accessories &#9660;</button>
+                        <div class="accdropcont">
+                            <a href="playmats.html">Playmats</a>
+                            <a href="sleeves.html">Sleeves</a>
+                            <a href="deckbox.html">Deck Boxes</a>
+                            <a href="dice.html">Dice, Counters, and Coins</a>
+                            <a href="binders.html">Binders</a>
+                        </div>
+                </div>
+                <div class="helpdropdown">
+                    <button class="helpbutton" onclick="document.location='help.html'">Help &#9660;</button>
+                        <div class="helpdropcont">
+                            <a href="help.html">Help & FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="about.html">About Us</a>
+                        </div>
+                </div>
+            </div>
             </header>
             <main class="container">
         <section class="products">
-            <h2>Our Products</h2>
+            <h2><br><br><br><br><br>Magic: The Gathering </h2>
             <div class="productlist">
-                <div class="productdisplay" data-id="10" data-name="Reality Fracture BB" data-price="129.99">
-                    <img src="Images/rfbb.png" alt="Magic: The Gathering Reality Fracture Booster Box">
+                <div class="productdisplay" 
+                data-id="10" 
+                data-name="Magic: The Gathering Reality Fracture Booster Box" 
+                data-price="129.99"
+                data-image="Images/rfbb.png">
+                    <img id="productImage" src="Images/rfbb.png" alt="Magic: The Gathering Reality Fracture Booster Box">
                     <h3>Magic: The Gathering <br>
                         Reality Fracture Play Booster Box</h3>
                     <p class="price">£129.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-                <div class="productdisplay" data-id="11" data-name="Marvel Super Heroes BB" data-price="129.99">
-                    <img src="Images/msbb.png" alt="Magic: The Gathering Marvel Super Heroes Booster Box">
+                <div class="productdisplay" 
+                data-id="11" 
+                data-name="Magic: The Gathering Marvel Super Heroes Booster Box" 
+                data-price="129.99"
+                data-image="Images/msbb.png">
+                    <img id="productImage" src="Images/msbb.png" alt="Magic: The Gathering Marvel Super Heroes Booster Box">
                     <h3>Magic: The Gathering <br>
                         Marvel Super Heroes Play Booster Box</h3>
                     <p class="price">£129.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="12" data-name="Marvel Spiderman BB" data-price="129.99">
-                    <img src="Images/smbb.png" alt="Magic: The Gathering Marvel's Spider-Man Play Booster Box">   
+            <div class="productdisplay" 
+            data-id="12" 
+            data-name="Magic: The Gathering Marvel's Spider-Man Booster Box" 
+            data-price="129.99"
+            data-image="Images/smbb.png">
+                    <img id="productImage" src="Images/smbb.png" alt="Magic: The Gathering Marvel's Spider-Man Play Booster Box">   
                     <h3>Magic: The Gathering <br>
                         Marvel's Spider-Man Play Booster Box</h3>
                     <p class="price">£129.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="13" data-name="Secrets of Strixhaven BB" data-price="129.99">
-                    <img src="Images/sosbb.png" alt="Magic: The Gathering Secrets of Strixhaven Play Booster Box">
+            <div class="productdisplay" 
+            data-id="13" 
+            data-name="Magic: The Gathering Secrets of Strixhaven Booster Box" 
+            data-price="129.99"
+            data-image="Images/sosbb.png">
+                    <img id="productImage" src="Images/sosbb.png" alt="Magic: The Gathering Secrets of Strixhaven Play Booster Box">
                     <h3>Magic: The Gathering <br>
                         Secrets of Strixhaven Play Booster Box</h3>
                     <p class="price">£129.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="14" data-name="The Hobbit BB" data-price="129.99">
-                    <img src="Images/hbb.png" alt="Magic: The Gathering The Hobbit Play Booster Box">
+            <div class="productdisplay" 
+            data-id="14" 
+            data-name="Magic: The Gathering The Hobbit Booster Box" 
+            data-price="129.99"
+            data-image="Images/hbb.png">
+                    <img id="productImage" src="Images/hbb.png" alt="Magic: The Gathering The Hobbit Play Booster Box">
                     <h3>Magic: The Gathering <br>
                     The Hobbit Play Booster Box</h3>
                     <p class="price">£129.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="15" data-name="Lorwyn Eclipsed BB" data-price="129.99">
-                    <img src="Images/lebb.png" alt="Magic: The Gathering Lorwyn Eclipsed Play Booster Box">
+            <div class="productdisplay" 
+            data-id="15" 
+            data-name="Magic: The Gathering Lorwyn Eclipsed Booster Box" 
+            data-price="129.99"
+            data-image="Images/lebb.png">
+                    <img id="productImage" src="Images/lebb.png" alt="Magic: The Gathering Lorwyn Eclipsed Play Booster Box">
                     <h3>Magic: The Gathering <br>
                     Lorwyn Eclipsed Play Booster Box</h3>
                     <p class="price">£129.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="16" data-name="Aetherdrift BB" data-price="129.99">
-                    <img src="Images/adbb.png" alt="Magic: The Gathering Aetherdrift Play Booster Box">
+            <div class="productdisplay" 
+            data-id="16" 
+            data-name="Magic: The Gathering Aetherdrift Booster Box" 
+            data-price="129.99"
+            data-image="Images/adbb.png">
+                    <img id="productImage" src="Images/adbb.png" alt="Magic: The Gathering Aetherdrift Play Booster Box">
                     <h3>Magic: The Gathering <br>
                     Aetherdrift Play Booster Box</h3>
                     <p class="price">£129.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="17" data-name="Jumpstart BB" data-price="129.99">
-                    <img src="Images/fjbb.png" alt="Magic: The Gathering Foundations Jumpstart 2025 Booster Box">
+            <div class="productdisplay" 
+            data-id="17" 
+            data-name="Magic: The Gathering Foundations Jumpstart 2025 Booster Box" 
+            data-price="129.99"
+            data-image="Images/fjbb.png">
+                    <img id="productImage" src="Images/fjbb.png" alt="Magic: The Gathering Foundations Jumpstart 2025 Booster Box">
                     <h3>Magic: The Gathering <br>
                         Foundations Jumpstart 2025 Booster Box</h3>
                     <p class="price">£129.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="18" data-name="Assassin's Creed Beyond BB" data-price="129.99">
-                    <img src="Images/acbb.png" alt="Magic: The Gathering Assassin's Creed Beyond Booster Box">
+            <div class="productdisplay" 
+            data-id="18" 
+            data-name="Magic: The Gathering Assassin's Creed Beyond Booster Box" 
+            data-price="129.99"
+            data-image="Images/acbb.png">
+                    <img id="productImage" src="Images/acbb.png" alt="Magic: The Gathering Assassin's Creed Beyond Booster Box">
                     <h3>Magic: The Gathering <br>
                     Assassin's Creed Beyond Booster Box</h3>
                     <p class="price">£129.99</p>

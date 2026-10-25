@@ -5,45 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales website to device resolution.-->
         <link rel="stylesheet" href="CSS/sleeves.css"> <!--Imports CSS Style sheet-->
         <title>Card Sleeves</title> <!--Decides what the tab text says-->
+        <link rel="shortcut icon" type="image/x-icon" href="Images\favicon.ico">
     </head>
-
     <body>
-        <header>
-            <br>
-            <h1><a href="index.html">Table Flip TCG</a></h1> <!--Links back to home page from the header-->
-            <div class="dropdowns">
-                <div class="carddropdown">
-                    <button class="tcgbutton">Cards</button>
-                        <div class="carddropcont">
-                            <a href="cardproducts.html">All TCGs</a>
-                            <a href="pokemon.html">Pokemon</a>
-                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
-                            <a href="mtg.html">Magic: The Gathering</a>
-                            <a href="lorcana.html">Lorcana</a>
-                        </div>
-                </div>
-                <div class="accdropdown">
-                    <button class="accbutton">Accessories</button>
-                        <div class="accdropcont">
-                            <a href="accessories.html">All accessories</a>
-                            <a href="playmats.html">Playmats</a>
-                            <a href="sleeves.html">Sleeves</a>
-                            <a href="deckbox.html">Deck Boxes</a>
-                            <a href="dice.html">Dice, Counters, and Coins</a>
-                            <a href="binders.html">Binders</a>
-                        </div>
-                </div>
-                <div class="helpdropdown">
-                    <button class="helpbutton">Help</button>
-                        <div class="helpdropcont">
-                            <a href="help.html">Help & FAQ</a>
-                            <a href="contact.html">Contact Us</a>
-                            <a href="about.html">About Us</a>
-                        </div>
-                </div>
-            </div>
-            <div id="main">
-            <button class="cartbarbutton" onclick="openNav()">Cart</button>
+        <div id="main">
+            <button class="cartbarbutton" onclick="openNav()"><img src="Images/cart.png"></button>
             <div class="cartcount" id="cartCount">0</div>
             <div id="cartbar" class="sidebar">
                 <a href="javascript:void(0)" class="closecart" onclick="closeNav()">&times;</a>
@@ -56,71 +22,139 @@
                     </div>
                 </aside>
             </div>
+        <header>
+            <br>
+            <h1><a href="index.html"><img src="Images/Logo.png"></a></h1> <!--Links back to home page from the header-->
+            <div class="dropdowns">
+                <div class="carddropdown">
+                    <button class="tcgbutton" onclick="document.location='cardproducts.html'">Cards &#9660;</button>
+                        <div class="carddropcont">
+                            <a href="pokemon.html">Pokemon</a>
+                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
+                            <a href="mtg.html">Magic: The Gathering</a>
+                            <a href="lorcana.html">Lorcana</a>
+                        </div>
+                </div>
+                <div class="accdropdown">
+                    <button class="accbutton" onclick="document.location='accessories.html'">Accessories &#9660;</button>
+                        <div class="accdropcont">
+                            <a href="playmats.html">Playmats</a>
+                            <a href="sleeves.html">Sleeves</a>
+                            <a href="deckbox.html">Deck Boxes</a>
+                            <a href="dice.html">Dice, Counters, and Coins</a>
+                            <a href="binders.html">Binders</a>
+                        </div>
+                </div>
+                <div class="helpdropdown">
+                    <button class="helpbutton" onclick="document.location='help.html'">Help &#9660;</button>
+                        <div class="helpdropcont">
+                            <a href="help.html">Help & FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="about.html">About Us</a>
+                        </div>
+                </div>
+            </div>
             </header>
             <main class="container">
         <section class="products">
-            <h2>Our Products</h2>
+            <h2><br><br><br><br><br>Card Sleeves</h2>
             <div class="productlist">
-                <div class="productdisplay" data-id="41" data-name="Dragon Shield Standard Outer Sleeves - Matte Clear 100ct" data-price="8.99">
-                    <img src="Images/dsos.png" alt="Dragon Shield Standard Outer Sleeves - Matte Clear 100ct">
+                <div class="productdisplay" 
+                data-id="41" 
+                data-name="Dragon Shield Standard Outer Sleeves - Matte Clear 100ct" 
+                data-price="8.99"
+                data-image="Images/dsos.png">
+                    <img id="productImage" src="Images/dsos.png" alt="Dragon Shield Standard Outer Sleeves - Matte Clear 100ct">
                     <h3>Dragon Shield Standard Outer Sleeves <br>
                         Matte Clear 100ct</h3>
                     <p class="price">£8.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-                <div class="productdisplay" data-id="42" data-name="Dragon Shield Standard Sleeves - Matte Amythest 100ct" data-price="8.99">
-                    <img src="Images/dsas.png" alt="Dragon Shield Standard Sleeves - Matte Amythest 100ct">
+                <div class="productdisplay" 
+                data-id="42" 
+                data-name="Dragon Shield Standard Sleeves - Matte Amythest 100ct" 
+                data-price="8.99"
+                data-image="Images/dsas.png">
+                    <img id="productImage" src="Images/dsas.png" alt="Dragon Shield Standard Sleeves - Matte Amythest 100ct">
                     <h3>Dragon Shield Standard Sleeves <br>
                         Matte Amythest 100ct</h3>
                     <p class="price">£8.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="43" data-name="Dragon Shield Standard Sleeves - Non-glare Blue 100ct" data-price="8.99">
-                    <img src="Images/dsbs.png" alt="Dragon Shield Standard Sleeves - Non-glare Blue 100ct">   
+            <div class="productdisplay" 
+            data-id="43" 
+            data-name="Dragon Shield Standard Sleeves - Non-glare Blue 100ct" 
+            data-price="8.99"
+            data-image="Images/dsbs.png">
+                    <img id="productImage" src="Images/dsbs.png" alt="Dragon Shield Standard Sleeves - Non-glare Blue 100ct">   
                     <h3>Dragon Shield Standard Sleeves <br>
                         Non-glare Blue 100ct</h3>
                     <p class="price">£8.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="44" data-name="Dragon Shield Standard Sleeves - Matte Pink Sapphire Sparkes 100ct" data-price="8.99">
-                    <img src="Images/dspss.png" alt="Dragon Shield Standard Sleeves - Matte Pink Sapphire Sparkes 100ct">
+            <div class="productdisplay" 
+            data-id="44" 
+            data-name="Dragon Shield Standard Sleeves - Matte Pink Sapphire Sparkes 100ct" 
+            data-price="8.99"
+            data-image="Images/dspss.png">
+                    <img id="productImage" src="Images/dspss.png" alt="Dragon Shield Standard Sleeves - Matte Pink Sapphire Sparkes 100ct">
                     <h3>Dragon Shield Standard Sleeves <br>
                         Matte Pink Sapphire Sparkles 100ct</h3>
                     <p class="price">£8.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="45" data-name="Ultra Pro Deck Protector Sleeves - Mega Charizard X 65ct" data-price="8.99">
-                    <img src="Images/upcxs.png" alt="Ultra Pro Deck Protector Sleeves - Mega Charizard X 65ct">
+            <div class="productdisplay" 
+            data-id="45" 
+            data-name="Ultra Pro Deck Protector Sleeves - Mega Charizard X 65ct" 
+            data-price="8.99"
+            data-image="Images/upcxs.png">
+                    <img id="productImage" src="Images/upcxs.png" alt="Ultra Pro Deck Protector Sleeves - Mega Charizard X 65ct">
                     <h3>Ultra Pro Deck Protector Sleeves <br>
                         Mega Charizard X 65ct</h3>
                     <p class="price">£8.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="46" data-name="Ultra Pro Deck Protector Sleeves - Mega Charizard Y 65ct" data-price="8.99">
-                    <img src="Images/upcys.png" alt="Ultra Pro Deck Protector Sleeves - Mega Charizard Y 65ct">
+            <div class="productdisplay" 
+            data-id="46" 
+            data-name="Ultra Pro Deck Protector Sleeves - Mega Charizard Y 65ct" 
+            data-price="8.99"
+            data-image="Images/upcys.png">
+                    <img id="productImage" src="Images/upcys.png" alt="Ultra Pro Deck Protector Sleeves - Mega Charizard Y 65ct">
                     <h3>Ultra Pro Deck Protector Sleeves <br>
                         Mega Charizard Y 65ct</h3>
                     <p class="price">£8.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="47" data-name="Gamegenic Standard Sleeves - Magic the Gathering: Secrets of Strixhaven Zimone 105ct" data-price="14.99">
-                    <img src="Images/gmtgzs.png" alt="Gamegenic Standard Sleeves - Magic the Gathering: Secrets of Strixhaven Zimone 105ct">
+            <div class="productdisplay" 
+            data-id="47" 
+            data-name="Gamegenic Standard Sleeves - Magic the Gathering: Secrets of Strixhaven Zimone 105ct" 
+            data-price="14.99"
+            data-image="Images/gmtgzs.png">
+                    <img id="productImage" src="Images/gmtgzs.png" alt="Gamegenic Standard Sleeves - Magic the Gathering: Secrets of Strixhaven Zimone 105ct">
                     <h3>Gamegenic Standard Sleeves <br>
                         Magic the Gathering: Secrets of Strixhaven <br>
                         Zimone 105ct</h3>
                     <p class="price">£14.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="48" data-name="Gamegenic Standard Sleeves - Magic the Gathering: Secrets of Strixhaven Rootha 105ct" data-price="14.99">
-                    <img src="Images/gmtgrs.png" alt="Gamegenic Standard Sleeves - Magic the Gathering: Secrets of Strixhaven Rootha 105ct">
+            <div class="productdisplay" 
+            data-id="48" 
+            data-name="Gamegenic Standard Sleeves - Magic the Gathering: Secrets of Strixhaven Rootha 105ct" 
+            data-price="14.99"
+            data-image="Images/gmtgrs.png">
+                    <img id="productImage" src="Images/gmtgrs.png" alt="Gamegenic Standard Sleeves - Magic the Gathering: Secrets of Strixhaven Rootha 105ct">
                     <h3>Gamegenic Standard Sleeves <br>
                         Magic the Gathering: Secrets of Strixhaven <br>
                         Rootha 105ct</h3>
                     <p class="price">£14.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="49" data-name="Gamegenic Standard Sleeves - Magic the Gathering: Marvel Spider-Man Green Goblin 105ct" data-price="14.99">
-                    <img src="Images/gmtgggs.png" alt="Gamegenic Standard Sleeves - Magic the Gathering: Marvel Spider-Man Green Goblin 105ct">
+            <div class="productdisplay" 
+            data-id="49" 
+            data-name="Gamegenic Standard Sleeves - Magic the Gathering: Marvel Spider-Man Green Goblin 105ct" 
+            data-price="14.99"
+            data-image="Images/gmtgggs.png">
+                    <img id="productImage" src="Images/gmtgggs.png" alt="Gamegenic Standard Sleeves - Magic the Gathering: Marvel Spider-Man Green Goblin 105ct">
                     <h3>Gamegenic Standard Sleeves <br>
                         Magic the Gathering: Marvel <br>
                         Spider-Man Green Goblin 105ct</h3>

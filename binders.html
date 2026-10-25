@@ -5,45 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales website to device resolution.-->
         <link rel="stylesheet" href="CSS/binders.css"> <!--Imports CSS Style sheet-->
         <title>Card Binders</title> <!--Decides what the tab text says-->
+        <link rel="shortcut icon" type="image/x-icon" href="Images\favicon.ico">
     </head>
-
     <body>
-        <header>
-            <br>
-            <h1><a href="index.html">Table Flip TCG</a></h1> <!--Links back to home page from the header-->
-            <div class="dropdowns">
-                <div class="carddropdown">
-                    <button class="tcgbutton">Cards</button>
-                        <div class="carddropcont">
-                            <a href="cardproducts.html">All TCGs</a>
-                            <a href="pokemon.html">Pokemon</a>
-                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
-                            <a href="mtg.html">Magic: The Gathering</a>
-                            <a href="lorcana.html">Lorcana</a>
-                        </div>
-                </div>
-                <div class="accdropdown">
-                    <button class="accbutton">Accessories</button>
-                        <div class="accdropcont">
-                            <a href="accessories.html">All accessories</a>
-                            <a href="playmats.html">Playmats</a>
-                            <a href="sleeves.html">Sleeves</a>
-                            <a href="deckbox.html">Deck Boxes</a>
-                            <a href="dice.html">Dice, Counters, and Coins</a>
-                            <a href="binders.html">Binders</a>
-                        </div>
-                </div>
-                <div class="helpdropdown">
-                    <button class="helpbutton">Help</button>
-                        <div class="helpdropcont">
-                            <a href="help.html">Help & FAQ</a>
-                            <a href="contact.html">Contact Us</a>
-                            <a href="about.html">About Us</a>
-                        </div>
-                </div>
-            </div>
-            <div id="main">
-            <button class="cartbarbutton" onclick="openNav()">Cart</button>
+        <div id="main">
+            <button class="cartbarbutton" onclick="openNav()"><img src="Images/cart.png"></button>
             <div class="cartcount" id="cartCount">0</div>
             <div id="cartbar" class="sidebar">
                 <a href="javascript:void(0)" class="closecart" onclick="closeNav()">&times;</a>
@@ -56,77 +22,145 @@
                     </div>
                 </aside>
             </div>
+        <header>
+            <br>
+            <h1><a href="index.html"><img src="Images/Logo.png"></a></h1> <!--Links back to home page from the header-->
+            <div class="dropdowns">
+                <div class="carddropdown">
+                    <button class="tcgbutton" onclick="document.location='cardproducts.html'">Cards &#9660;</button>
+                        <div class="carddropcont">
+                            <a href="pokemon.html">Pokemon</a>
+                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
+                            <a href="mtg.html">Magic: The Gathering</a>
+                            <a href="lorcana.html">Lorcana</a>
+                        </div>
+                </div>
+                <div class="accdropdown">
+                    <button class="accbutton" onclick="document.location='accessories.html'">Accessories &#9660;</button>
+                        <div class="accdropcont">
+                            <a href="playmats.html">Playmats</a>
+                            <a href="sleeves.html">Sleeves</a>
+                            <a href="deckbox.html">Deck Boxes</a>
+                            <a href="dice.html">Dice, Counters, and Coins</a>
+                            <a href="binders.html">Binders</a>
+                        </div>
+                </div>
+                <div class="helpdropdown">
+                    <button class="helpbutton" onclick="document.location='help.html'">Help &#9660;</button>
+                        <div class="helpdropcont">
+                            <a href="help.html">Help & FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="about.html">About Us</a>
+                        </div>
+                </div>
+            </div>
             </header>
             <main class="container">
         <section class="products">
-            <h2>Our Products</h2>
+            <h2><br><br><br><br><br>Card Binders</h2>
             <div class="productlist">
-                <div class="productdisplay" data-id="68" data-name="Vault X 9-Pocket Exo-Tec Zip Binder - Teal" data-price="22.99">
-                    <img src="Images/vx9tb.png" alt="Vault X 9-Pocket Exo-Tec Zip Binder - Teal">
+                <div class="productdisplay" 
+                data-id="68" 
+                data-name="Vault X 9-Pocket Exo-Tec Zip Binder - Teal" 
+                data-price="22.99"
+                data-image="Images/vx9tb.png">
+                    <img id="productImage" src="Images/vx9tb.png" alt="Vault X 9-Pocket Exo-Tec Zip Binder - Teal">
                     <h3>Vault X 9-Pocket <br>
                         Exo-Tec Zip Binder <br>
                         Teal</h3>
                     <p class="price">£22.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-                <div class="productdisplay" data-id="69" data-name="Vault X 4-Pocket Exo-Tec Zip Binder - Red" data-price="14.99">
-                    <img src="Images/vx4rb.webp" alt="Vault X 4-Pocket Exo-Tec Zip Binder - Red">
+                <div class="productdisplay" 
+                data-id="69" 
+                data-name="Vault X 4-Pocket Exo-Tec Zip Binder - Red" 
+                data-price="14.99"
+                data-image="Images/vx4rb.png">
+                    <img id="productImage" src="Images/vx4rb.png" alt="Vault X 4-Pocket Exo-Tec Zip Binder - Red">
                     <h3>Vault X 4-Pocket <br>
                         Exo-Tec Zip Binder <br>
                         Red</h3>
                     <p class="price">£14.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="70" data-name="Vault X 9-Pocket Exo-Tec Zip Binder - Yellow" data-price="22.99">
-                    <img src="Images/vx9yb.png" alt="Vault X 9-Pocket Exo-Tec Zip Binder - Yellow">   
+            <div class="productdisplay" 
+            data-id="70" 
+            data-name="Vault X 9-Pocket Exo-Tec Zip Binder - Yellow" 
+            data-price="22.99"
+            data-image="Images/vx9yb.png">
+                    <img id="productImage" src="Images/vx9yb.png" alt="Vault X 9-Pocket Exo-Tec Zip Binder - Yellow">   
                     <h3>Vault X 9-Pocket <br>
                         Exo-Tec Zip Binder <br>
                         Yellow</h3>
                     <p class="price">£22.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="71" data-name="Vault X Large Exo-Tec Ring Binder - Red" data-price="16.99">
-                    <img src="Images/vxrrb.png" alt="Vault X Large Exo-Tec Ring Binder - Red">
+            <div class="productdisplay" 
+            data-id="71" 
+            data-name="Vault X Large Exo-Tec Ring Binder - Red" 
+            data-price="16.99"
+            data-image="Images/vxrrb.png">
+                    <img id="productImage" src="Images/vxrrb.png" alt="Vault X Large Exo-Tec Ring Binder - Red">
                     <h3>Vault X Large <br>
                         Exo-Tec Ring Binder <br>
                         Red</h3>
                     <p class="price">£16.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="72" data-name="Vault X Large Exo-Tec Ring Binder - Blue" data-price="16.99">
-                    <img src="Images/vxrbb.png" alt="Vault X Large Exo-Tec Ring Binder - Blue">
+            <div class="productdisplay" 
+            data-id="72" 
+            data-name="Vault X Large Exo-Tec Ring Binder - Blue" 
+            data-price="16.99"
+            data-image="Images/vxrbb.png">
+                    <img id="productImage" src="Images/vxrbb.png" alt="Vault X Large Exo-Tec Ring Binder - Blue">
                     <h3>Vault X Large <br>
                         Exo-Tec Ring Binder <br>
                         Blue</h3>
                     <p class="price">£16.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="73" data-name="Vault X Slim Exo-Tec Ring Binder - Yellow" data-price="14.99">
-                    <img src="Images/vxryb.png" alt="Vault X Slim Exo-Tec Ring Binder - Yellow">
+            <div class="productdisplay" 
+            data-id="73" 
+            data-name="Vault X Slim Exo-Tec Ring Binder - Yellow" 
+            data-price="14.99"
+            data-image="Images/vxryb.png">
+                    <img id="productImage" src="Images/vxryb.png" alt="Vault X Slim Exo-Tec Ring Binder - Yellow">
                     <h3>Vault X Slim <br>
                         Exo-Tec Ring Binder <br>
                         Yellow</h3>
                     <p class="price">£14.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="74" data-name="Vault X Slim Exo-Tec Ring Binder - Teal" data-price="14.99">
-                    <img src="Images/vxrtb.png" alt="Vault X Slim Exo-Tec Ring Binder - Teal">
+            <div class="productdisplay" 
+            data-id="74" 
+            data-name="Vault X Slim Exo-Tec Ring Binder - Teal" 
+            data-price="14.99"
+            data-image="Images/vxrtb.png">
+                    <img id="productImage" src="Images/vxrtb.png" alt="Vault X Slim Exo-Tec Ring Binder - Teal">
                     <h3>Vault X Slim <br>
                         Exo-Tec Ring Binder <br>
                         Teal</h3>
                     <p class="price">£14.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="75" data-name="Ultra Pro 9-Pocket Zippered Premium PRO-Binder - Fallout Vault Boy" data-price="39.99">
-                    <img src="Images/upfzb.png" alt="Ultra Pro 9-Pocket Zippered Premium PRO-Binder - Fallout Vault Boy">
+            <div class="productdisplay" 
+            data-id="75" 
+            data-name="Ultra Pro 9-Pocket Zippered Premium PRO-Binder - Fallout Vault Boy" 
+            data-price="39.99"
+            data-image="Images/upfzb.png">
+                    <img id="productImage" src="Images/upfzb.png" alt="Ultra Pro 9-Pocket Zippered Premium PRO-Binder - Fallout Vault Boy">
                     <h3>Ultra Pro 9-Pocket <br>
                         Zippered Premium PRO-Binder <br>
                         Fallout Vault Boy</h3>
                     <p class="price">£39.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="76" data-name="Dragon Shield Card Codex Zipster Binder XL - Midnight Blue" data-price="29.99">
-                    <img src="Images/dsccmb.png" alt="Dragon Shield Card Codex Zipster Binder XL - Midnight Blue">
+            <div class="productdisplay" 
+            data-id="76" 
+            data-name="Dragon Shield Card Codex Zipster Binder XL - Midnight Blue" 
+            data-price="29.99"
+            data-image="Images/dsccmb.png">
+                    <img id="productImage" src="Images/dsccmb.png" alt="Dragon Shield Card Codex Zipster Binder XL - Midnight Blue">
                     <h3>Dragon Shield Card Codex <br>
                         Zipster Binder XL <br>
                         Midnight Blue</h3>

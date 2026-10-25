@@ -5,45 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales website to device resolution.-->
         <link rel="stylesheet" href="CSS/pokemon.css"> <!--Imports CSS Style sheet-->
         <title>Pokemon TCG</title> <!--Decides what the tab text says-->
+        <link rel="shortcut icon" type="image/x-icon" href="Images\favicon.ico">
     </head>
-
     <body>
-        <header>
-            <br>
-            <h1><a href="index.html">Table Flip TCG</a></h1> <!--Links back to home page from the header-->
-            <div class="dropdowns">
-                <div class="carddropdown">
-                    <button class="tcgbutton">Cards</button>
-                        <div class="carddropcont">
-                            <a href="cardproducts.html">All TCGs</a>
-                            <a href="pokemon.html">Pokemon</a>
-                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
-                            <a href="mtg.html">Magic: The Gathering</a>
-                            <a href="lorcana.html">Lorcana</a>
-                        </div>
-                </div>
-                <div class="accdropdown">
-                    <button class="accbutton">Accessories</button>
-                        <div class="accdropcont">
-                            <a href="accessories.html">All accessories</a>
-                            <a href="playmats.html">Playmats</a>
-                            <a href="sleeves.html">Sleeves</a>
-                            <a href="deckbox.html">Deck Boxes</a>
-                            <a href="dice.html">Dice, Counters, and Coins</a>
-                            <a href="binders.html">Binders</a>
-                        </div>
-                </div>
-                <div class="helpdropdown">
-                    <button class="helpbutton">Help</button>
-                        <div class="helpdropcont">
-                            <a href="help.html">Help & FAQ</a>
-                            <a href="contact.html">Contact Us</a>
-                            <a href="about.html">About Us</a>
-                        </div>
-                </div>
-            </div>
-            <div id="main">
-            <button class="cartbarbutton" onclick="openNav()">Cart</button>
+        <div id="main">
+            <button class="cartbarbutton" onclick="openNav()"><img src="Images/cart.png"></button>
             <div class="cartcount" id="cartCount">0</div>
             <div id="cartbar" class="sidebar">
                 <a href="javascript:void(0)" class="closecart" onclick="closeNav()">&times;</a>
@@ -56,61 +22,129 @@
                     </div>
                 </aside>
             </div>
+        <header>
+            <br>
+            <h1><a href="index.html"><img src="Images/Logo.png"></a></h1> <!--Links back to home page from the header-->
+            <div class="dropdowns">
+                <div class="carddropdown">
+                    <button class="tcgbutton" onclick="document.location='cardproducts.html'">Cards &#9660;</button>
+                        <div class="carddropcont">
+                            <a href="pokemon.html">Pokemon</a>
+                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
+                            <a href="mtg.html">Magic: The Gathering</a>
+                            <a href="lorcana.html">Lorcana</a>
+                        </div>
+                </div>
+                <div class="accdropdown">
+                    <button class="accbutton" onclick="document.location='accessories.html'">Accessories &#9660;</button>
+                        <div class="accdropcont">
+                            <a href="playmats.html">Playmats</a>
+                            <a href="sleeves.html">Sleeves</a>
+                            <a href="deckbox.html">Deck Boxes</a>
+                            <a href="dice.html">Dice, Counters, and Coins</a>
+                            <a href="binders.html">Binders</a>
+                        </div>
+                </div>
+                <div class="helpdropdown">
+                    <button class="helpbutton" onclick="document.location='help.html'">Help &#9660;</button>
+                        <div class="helpdropcont">
+                            <a href="help.html">Help & FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="about.html">About Us</a>
+                        </div>
+                </div>
+            </div>
             </header>
             <main class="container">
         <section class="products">
-            <h2>Our Products</h2>
+            <h2><br><br><br><br><br>Pokemon TCG</h2>
             <div class="productlist">
-                <div class="productdisplay" data-id="1" data-name="Pokemon 30th ETB" data-price="49.99">
-                    <img src="Images/30etb.png" alt="Pokemon 30th Anniversary Elite Trainer Box">
+                <div class="productdisplay" 
+                data-id="1" 
+                data-name="Pokemon 30th Anniversary Elite Trainer Box" 
+                data-price="49.99"
+                data-image="Images/30etb.png">
+                    <img id="productImage" src="Images/30etb.png" alt="Pokemon 30th Anniversary Elite Trainer Box">
                     <h3>Pokemon 30th Anniversary<br>Elite Trainer Box</h3>
                     <p class="price">£49.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-                <div class="productdisplay" data-id="2" data-name="Journey Together ETB" data-price="49.99">
-                    <img src="Images/jtetb.png" alt="Pokemon Journey Together Elite Trainer Box">
+                <div class="productdisplay" 
+                data-id="2" 
+                data-name="Pokemon Journey Together Elite Trainer Box" 
+                data-price="49.99"
+                data-image="Images/jtetb.png">
+                    <img id="productImage" src="Images/jtetb.png" alt="Pokemon Journey Together Elite Trainer Box">
                     <h3>Pokemon Journey Together<br>Elite Trainer Box</h3>
                     <p class="price">£49.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="3" data-name="Ascended Heroes ETB" data-price="49.99">
-                    <img src="Images/ahetb.png" alt="Pokemon Ascended Heroes Elite Trainer Box">   
+            <div class="productdisplay" 
+            data-id="3" 
+            data-name="Pokemon Ascended Heroes Elite Trainer Box" 
+            data-price="49.99"
+            data-image="Images/ahetb.png">
+                    <img id="productImage" src="Images/ahetb.png" alt="Pokemon Ascended Heroes Elite Trainer Box">   
                     <h3>Pokemon Ascended Heroes<br>Elite Trainer Box</h3>
                     <p class="price">£49.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="4" data-name="Mega Evolution ETB - Gardevoir" data-price="49.99">
-                    <img src="Images/meetbg.png" alt="Pokemon Mega Evolution Elite Trainer Box Gardevoir">
+            <div class="productdisplay" 
+            data-id="4" 
+            data-name="Pokemon Mega Evolution Elite Trainer Box - Gardevoir" 
+            data-price="49.99"
+            data-image="Images/meetbg.png">
+                    <img id="productImage" src="Images/meetbg.png" alt="Pokemon Mega Evolution Elite Trainer Box Gardevoir">
                     <h3>Pokemon Mega Evolution<br>Elite Trainer Box - Gardevoir</h3>
                     <p class="price">£49.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="5" data-name="Mega Evolution ETB - Lucario" data-price="49.99">
-                    <img src="Images/meetbl.png" alt="Pokemon Mega Evolution Elite Trainer Box Lucario">
+            <div class="productdisplay" 
+            data-id="5" 
+            data-name="Pokemon Mega Evolution Elite Trainer Box - Lucario" 
+            data-price="49.99"
+            data-image="Images/meetbl.png">
+                    <img id="productImage" src="Images/meetbl.png" alt="Pokemon Mega Evolution Elite Trainer Box Lucario">
                     <h3>Pokemon Mega Evolution<br>Elite Trainer Box - Lucario</h3>
                     <p class="price">£49.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="6" data-name="Phantasmal Flames ETB" data-price="49.99">
-                    <img src="Images/pfetb.png" alt="Pokemon Phantasmal Flames ETB">
+            <div class="productdisplay" 
+            data-id="6" 
+            data-name="Pokemon Phantasmal Flames Elite Trainer Box" 
+            data-price="49.99"
+            data-image="Images/pfetb.png">
+                    <img id="productImage" src="Images/pfetb.png" alt="Pokemon Phantasmal Flames ETB">
                     <h3>Pokemon Phantasmal Flames<br>Elite Trainer Box</h3>
                     <p class="price">£49.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="7" data-name="Perfect Order ETB" data-price="49.99">
-                    <img src="Images/poetb.png" alt="Pokemon Perfect Order Elite Trainer Box">
+            <div class="productdisplay" 
+            data-id="7" 
+            data-name="Pokemon Perfect Order Elite Trainer Box" 
+            data-price="49.99"
+            data-image="Images/poetb.png">
+                    <img id="productImage" src="Images/poetb.png" alt="Pokemon Perfect Order Elite Trainer Box">
                     <h3>Pokemon Perfect Order<br>Elite Trainer Box</h3>
                     <p class="price">£49.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="8" data-name="Chaos Rising ETB" data-price="49.99">
-                    <img src="Images/cretb.png" alt="Pokemon Chaos Rising Elite Trainer Box">
+            <div class="productdisplay" 
+            data-id="8" 
+            data-name="Pokemon Chaos Rising Elite Trainer Box" 
+            data-price="49.99"
+            data-image="Images/cretb.png">
+                    <img id="productImage" src="Images/cretb.png" alt="Pokemon Chaos Rising Elite Trainer Box">
                     <h3>Pokemon Chaos Rising<br>Elite Trainer Box</h3>
                     <p class="price">£49.99</p>
                     <button class="addbutton">Add to Cart</button>
                 </div>
-            <div class="productdisplay" data-id="9" data-name="Pitch Black ETB" data-price="49.99">
-                    <img src="Images/pbetb.png" alt="Pokemon Pitch Black Elite Trainer Box">
+            <div class="productdisplay" 
+            data-id="9" 
+            data-name="Pokemon Pitch Black Elite Trainer Box" 
+            data-price="49.99"
+            data-image="Images/pbetb.png">
+                    <img id="productImage" src="Images/pbetb.png" alt="Pokemon Pitch Black Elite Trainer Box">
                     <h3>Pokemon Pitch Black<br>Elite Trainer Box</h3>
                     <p class="price">£49.99</p>
                     <button class="addbutton">Add to Cart</button>
