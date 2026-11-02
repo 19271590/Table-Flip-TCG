@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Scales website to device resolution.-->
+        <link rel="stylesheet" href="CSS/checkout.css"> <!--Imports CSS Style sheet-->
+        <title>Checkout</title> <!--Decides what the tab text says-->
+        <link rel="shortcut icon" type="image/x-icon" href="Images\favicon.ico">
+    </head>
+
+    <body>
+        <header>
+            <br>
+            <h1><a href="index.html"><img src="Images/Logo.png"></a></h1> <!--Links back to home page from the header--><!--Links back to home page from the header-->
+            <br>
+            <div class="dropdowns">
+                <div class="carddropdown">
+                    <button class="tcgbutton" onclick="document.location='cardproducts.html'">Cards &#9660;</button>
+                        <div class="carddropcont">
+                            <a href="pokemon.html">Pokémon</a>
+                            <a href="Cyberpunk.html">Cyberpunk TCG</a>
+                            <a href="mtg.html">Magic: The Gathering</a>
+                            <a href="lorcana.html">Lorcana</a>
+                        </div>
+                </div>
+                <div class="accdropdown">
+                    <button class="accbutton" onclick="document.location='accessories.html'">Accessories &#9660;</button>
+                        <div class="accdropcont">
+                            <a href="playmats.html">Playmats</a>
+                            <a href="sleeves.html">Sleeves</a>
+                            <a href="deckbox.html">Deck Boxes</a>
+                            <a href="dice.html">Dice, Counters, and Coins</a>
+                            <a href="binders.html">Binders</a>
+                        </div>
+                </div>
+                <div class="helpdropdown">
+                    <button class="helpbutton" onclick="document.location='help.html'">Help &#9660;</button>
+                        <div class="helpdropcont">
+                            <a href="help.html">Help & FAQ</a>
+                            <a href="contact.html">Contact Us</a>
+                            <a href="about.html">About Us</a>
+                        </div>
+                </div>
+            </div>
+        </header>
+            
+            <main id="checkoutpage">
+                <h2 class="producttype"><br><br><br><br><br>Checkout<br><br></h2>
+                <div id="checkout" class="checkout">
+                        <div class="cartcount" id="cartCount"></div>
+                        <h2>Your Cart<br><br></h2>
+                        <div class="cartitems">
+                        </div>
+                        <div class="carttotal">
+                        <p><strong>Total: £<span id="total">0.00</span></strong></p>
+                        </div>
+                </div>
+                <form class="checkoutform">
+                    <h3>Shipping Details</h3>
+                    <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+                    <input type="text" id="lname" name="lname" placeholder="Surname"><br>
+                    <input type="text" id="afirst" name="afirst" placeholder="Address"><br>
+                    <input type="text" id="asecond" name="asecond" placeholder="Apartment/Suite/Building (Optional)"><br>
+                    <input type="text" id="athird" name="athird" placeholder="City"><br>
+                    <select required id="afourth" name="afourth">
+                    <option value="" selected disabled hidden>Country</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="France">France</option>
+                    <option value="Spain">Spain</option>
+
+                    </select><br>
+                    <input type="text" id="afifth" name="afifth" placeholder="State/Province (Optional)"><br>
+                    <input type="text" id="afifth" name="afifth" placeholder="Postal Code"><br><br><br>
+                    <h3>Payment Details</h3>
+                    <input type="text" id="cardnumber" placeholder="Card Number"><br>
+                    <input type="text" id="expiry" placeholder="Expiry Date"><br>
+                    <input type="text" id="CVV" placeholder="CVV"><br><br><br>
+                    <input type="submit" value="Complete Order" class="submit">
+                </form>
+                </main>
+                    <footer>
+                        <br>
+                        <p>Table-Flip TCG</p>
+                        <br>
+                        <nav class="bottombar">
+                        <a href="about.html">About us</a>
+                        <a href="contact.html">Contact us</a>
+                        </nav class="bottombar">
+                    </footer>
+                    <script src="Scripts/cart.js"></script>
+    </body>
+</html>

@@ -6,8 +6,22 @@
         <title>About Us</title> <!--Decides what the tab text says-->
         <link rel="shortcut icon" type="image/x-icon" href="Images\favicon.ico">
     </head>
-
     <body>
+        <div id="main">
+            <button class="cartbarbutton" onclick="openNav()"><img src="Images/cart.png"></button>
+            <div class="cartcount" id="cartCount">0</div>
+            <div id="cartbar" class="sidebar">
+                <a href="javascript:void(0)" class="closecart" onclick="closeNav()">&times;</a>
+                <aside== class="cartdisplay">
+                    <h2>Your Cart</h2>
+                    <div class="cartitems">
+                    </div>
+                    <div class="carttotal">
+                        <p><strong>Total: £<span id="total">0.00</span></strong></p>
+                        <p><a href="checkout.html"><strong>Checkout</strong></a></p>
+                    </div>
+                </aside>
+            </div>
         <header>
             <br>
             <h1><a href="index.html"><img src="Images/Logo.png"></a></h1> <!--Links back to home page from the header-->
@@ -16,7 +30,7 @@
                 <div class="carddropdown">
                     <button class="tcgbutton" onclick="document.location='cardproducts.html'">Cards &#9660;</button>
                         <div class="carddropcont">
-                            <a href="pokemon.html">Pokemon</a>
+                            <a href="pokemon.html">Pokémon</a>
                             <a href="Cyberpunk.html">Cyberpunk TCG</a>
                             <a href="mtg.html">Magic: The Gathering</a>
                             <a href="lorcana.html">Lorcana</a>
@@ -43,27 +57,41 @@
             </div>
         </header>
             <main>
-                    <p><br><br></p>
+                    <p><br><br><br><br><br><br></p>
                     <h2>About us</h2>
-                    <p class="Text1">We are a small company located in London, England.<br>
-                    We started out as just three guys,<br>
-                    wanting to make all TCGs available to everyone.</p class="Text1">
-                    <img src="Images/About1.png" alt="Our glorious office!" class="About1"> <!--Displays image and alternative text.-->
-                    <p class="Text2">Our founder, John Smith, was fed up with not being able<br>
-                    to find stock of any TCG packs, and so he put together<br>
-                     a team to finally defeat scalpers once and for all.</p class="Text2">
-                    <img src="Images/About2.png" alt="Our team!" class="About2">
-                    <p class="Text3">Our mission here at Table Flip TCG is to make sure <strong>you</strong><br>
-                    can get products of your favourite TCGs <br>
-                    without having to pay ridiculous prices.<br>
-                    Whether you are a beginner or master, player or collector,<br>
-                    We invite you to check out our store!</p class="Text3">
-                    <img src="Images/About3.png" alt="Yay Yippee!" class="About3">
+                    <p> At Table-Flip TCG, our main goal is to bring Trading Card Games to players and collectors, both experienced and new. <br>
+                        We pride ourselves on our philosphy of never raising our prices above RRP, no matter what the market prices say. <br><br><br> </p>
+                    <h2>Our Product Range</h2>
+                    <p>We specialise in a large array of different TCGs, including:</p>
+                    <ul>
+                        <li><a href="pokemon.html">Pokémon</a></li>
+                        <li><a href="mtg.html">Magic: The Gathering</a></li>
+                        <li><a href="lorcana.html">Lorcana</a></li>
+                        <li><a href="cyberpunk.html">Cyberpunk</a></li>
+                    </ul>
+                    <p><br>Beyond trading cards, we also specialise in a variety of accessories, including:</p>
+                    <ul>
+                        <li><a href="sleeves.html">Sleeves</a></li>
+                        <li><a href="binders.html">Binders</a></li>
+                        <li><a href="dice.html">Dice and Counters</a></li>
+                        <li><a href="deckbox.html">Deck Boxes</a></li>
+                    </ul>
+                    <p><br><br></p>
+                    <h2>Our Commitment to our Customers</h2>
+                    <p>Here at Table-Flip TCG, customer satisfaction is our number one goal. We strive to provide a seemless experience, but<br>
+                    sometimes things may go wrong. Our dedicated customer service team is always there to lend a hand, with any problem or question.<br><br><br></p>
+                    <h2>Connect with Us</h2>
+                    <p>We love to connect with our community! Follow us on social media for the latest news or product releases!</p>
+                    <ul>
+                        <li>Facebook</li>
+                        <li><a href="https://www.instagram.com/tablefliptcg053/">Instagram</a></li>
+                        <li>Twitter</li>
+                    </ul>
                 </main>
 
                     <footer>
                         <br>
-                        <p>Table Flip TCG</p>
+                        <p>Table-Flip TCG</p>
                         <br>
                         <nav class="bottombar">
                         <a href="about.html">About us</a>

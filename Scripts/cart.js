@@ -148,6 +148,17 @@ document.body.addEventListener('click', function(event) {
             }
         }
     }
+    if (target.classList.contains('submit')) {
+        const orderNumber = Math.floor(Math.random() * 999999)+ 100000;
+        cart = [];
+        localStorage.setItem("cart", JSON.stringify(cart));
+        document.getElementById("checkoutpage").innerHTML = `
+        <div class="ThankYou">
+            <h1>Thank you for your purchase!</h1>
+            <h2>Your order number is #${orderNumber}</h2>
+        </div>
+        <img src="Images/confetti.gif" class="confetti">`;
+    }
 });
 
 // Initialize
